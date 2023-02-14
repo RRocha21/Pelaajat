@@ -1,0 +1,25 @@
+.row
+		form(enctype="multipart/form-data").col.s12
+				.row
+						.input-field.col.s12.m6
+							.file-field.input-field
+								.btn
+									span Sponsor
+									input#sponsor(type='file', name='avatar')
+								.file-path-wrapper
+									input.file-path.validate(type='text')
+									label Image Size for Best Quality and No Deformation: 583x83px
+						.input-field.col.s12.m6
+								.col.s12.m6
+									.card-panel.grey.lighten-5.z-depth-1
+										.row
+											.col.s12 
+												img.responsive-img#sponsor_img(alt='')
+												// notice the "circle" class
+										.row
+											.col.s12
+												span.black-text
+													a.waves-effect.waves-light.btn#delete_sponsor_logo Delete Sponsor Logo
+						.input-field.col.s12
+							a.waves-effect.waves-light.btn#save_sponsor Save Sponsor
+							a.waves-effect.waves-light.btn.disabled#delete_sponsor Delete Sponsor
