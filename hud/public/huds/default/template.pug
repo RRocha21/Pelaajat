@@ -17,6 +17,10 @@ html
     link(rel='stylesheet', href='https://csshake.surge.sh/csshake.min.cs  s')
   body
     section 
+     .side_left_sponsor
+      .inner
+     .side_right_sponsor
+      .inner
      .sponsor
       .inner
      .bigger_sponsor 
@@ -124,12 +128,13 @@ html
        .text
       .bars
      .topbar_container
-      .topbar_i_logo
+      //.topbar_i_logo
         .background
         .inner
           //- img(src='../../sponsors/rtp_logo.png')
       .topbar_i_counter
-        .separator
+        //.separator
+        .vs_txt vs
         .line1 
         .line2
         .title PLAYERS ALIVE
@@ -142,10 +147,13 @@ html
       .right
       .text FIREPOWER
      .header_container
+      .upper_right_line
+      .upper_left_line
+      .best_container Best of 3
       //.line
-      //.left_logo_container
+      .left_logo_container
         .logo
-      //.right_logo_container
+      .right_logo_container
         .logo
       .time 
       .left_series
@@ -163,8 +171,8 @@ html
       .round_container
         .round_text
       .snow
-      .left_separator
-      .right_separator
+      //.left_separator
+      //.right_separator
       .bomb_countdown_container
         .background 
         .bomb
@@ -186,15 +194,15 @@ html
          .pause_2
          .pause_3
          .pause_4
-      .win_container_left
-      .win_container_right
-      .pause_container_left
-      .pause_container_right
-      .win_text_left 
+      //.win_container_left
+      //.win_container_right
+      //.pause_container_left
+      //.pause_container_right
+      //.win_text_left 
         .text WINS THE ROUND!
-      .win_text_right 
+      //.win_text_right 
         .text WINS THE ROUND!
-    .Progress_Bar
+    //.Progress_Bar
       .Left_Team 
         .Background
         .Progress
@@ -205,7 +213,7 @@ html
         .BackgroundImage
         .Player_Txt NICOODOZ
         .Center_Txt PLANTING THE BOMB
-    .Team_A
+    //.Team_A
       .EquipValue 
         .Upper_Container 
           .txt Equipment
@@ -217,7 +225,7 @@ html
         .Lower_Container 
           .txt $1960
       .separator1 
-    .Team_B
+    //.Team_B
       .EquipValue 
         .Upper_Container 
           .txt Equipment
@@ -229,7 +237,7 @@ html
         .Lower_Container 
           .txt $1960
       .separator1 
-    .Spam_A   
+    //.Spam_A   
       .Spam_BG
         .Top_Spam
         .Progress
@@ -246,7 +254,7 @@ html
           .Inc
             .Inc_Icon
             .Inc_Txt  x10
-    .Spam_B  
+    //.Spam_B  
       .Spam_BG
         .Top_Spam
         .Progress
@@ -263,7 +271,7 @@ html
           .Inc
             .Inc_Icon
             .Inc_Txt  x10   
-    .LossBonus_A 
+    //.LossBonus_A 
       .Upper_Container
         .txt Loss Bonus
       .Lower_Container
@@ -273,7 +281,7 @@ html
         .bonus_box_2
         .bonus_box_3
         .bonus_box_4
-    .LossBonus_B
+    //.LossBonus_B
       .Upper_Container
         .txt Loss Bonus
       .Lower_Container
@@ -284,13 +292,15 @@ html
         .bonus_box_3
         .bonus_box_4
     .observed_container
+      .line
       .photo_container
         .photo_player 
           img(src='../../files/img/players/1.png')
-      .line
       .bomb_defuse
       #nades
       .name 
+      .helmet 
+      .armor
       .health_bar
         .health_icon
         .health 100
@@ -303,33 +313,32 @@ html
         .ammo_txt 100
     .players_left_container 
       #player1(class="player_container")
-       .arrow
-       .arrow_2
        .background
        .photo_container
         .photo_player 
           img(src='../../files/img/players/1.png')
-        .photo_player_shade
-       .health_shade
+        //.photo_player_shade
        .diamond
        .number
        .flash
-       .Round_Kills
+       //.Round_Kills
         .background2
         .icon
         .frags
        .top_bar
         .health_red
         .health_bar
-        .health_bar_bg 
        .flex_lower_left
+        .health_icon
+        .health_text
         .armor_background
           .armor
         .helmet_background
           .helmet
-        .health_text
-        .health_icon
-       .player_name
+       .flex_name_round 
+        .player_name 
+        .roundkills
+         .txt 1
        .bottom_bar
         .flex_kd
           .k_icon 
@@ -339,24 +348,17 @@ html
         .flex_money_bomb
           .money
            .moneys
-          .defuse
-           .defuse_image
-          .bomb_2
-           .bomb_image
         .bomb_defuse_background
         .bomb_defuse
         .grenades
         .weapon_icon
       #player2(class="player_container")
-       .arrow
-       .arrow_2
        .background
        .photo_container
         .photo_player 
           img(src='../../files/img/players/1.png')   
-        .photo_player_shade 
-       .health_shade
-       .Round_Kills
+        //.photo_player_shade 
+       //.Round_Kills
         .background2
         .icon
         .frags
@@ -366,15 +368,17 @@ html
        .top_bar
         .health_red
         .health_bar
-        .health_bar_bg 
        .flex_lower_left
+        .health_icon
+        .health_text
         .armor_background
           .armor
         .helmet_background
           .helmet
-        .health_text
-        .health_icon
-       .player_name
+       .flex_name_round 
+        .player_name 
+        .roundkills
+         .txt 1
        .bottom_bar
         .flex_kd
           .k_icon 
@@ -384,22 +388,17 @@ html
         .flex_money_bomb
           .money
            .moneys
-          .defuse
-           .defuse_image
-          .bomb_2
-           .bomb_image
+        .bomb_defuse_background
+        .bomb_defuse
         .grenades
         .weapon_icon
       #player3(class="player_container")
-       .arrow
-       .arrow_2
        .background
        .photo_container
         .photo_player 
           img(src='../../files/img/players/1.png')    
-        .photo_player_shade 
-       .health_shade 
-       .Round_Kills
+        //- .photo_player_shade 
+       //.Round_Kills
         .background2
         .icon
         .frags
@@ -409,15 +408,17 @@ html
        .top_bar
         .health_red
         .health_bar
-        .health_bar_bg 
        .flex_lower_left
+        .health_icon
+        .health_text
         .armor_background
           .armor
         .helmet_background
           .helmet
-        .health_text
-        .health_icon
-       .player_name
+       .flex_name_round 
+        .player_name 
+        .roundkills
+         .txt 1
        .bottom_bar
         .flex_kd
           .k_icon 
@@ -427,22 +428,18 @@ html
         .flex_money_bomb
           .money
            .moneys
-          .defuse
-           .defuse_image
-          .bomb_2
-           .bomb_image
+        .bomb_defuse_background
+        .bomb_defuse
         .grenades
         .weapon_icon
       #player4(class="player_container")
        .arrow
-       .arrow_2
        .background
        .photo_container
         .photo_player 
           img(src='../../files/img/players/1.png')
-        .photo_player_shade
-       .health_shade
-       .Round_Kills
+        //- .photo_player_shade
+       //.Round_Kills
         .background2
         .icon
         .frags
@@ -452,15 +449,17 @@ html
        .top_bar
         .health_red
         .health_bar
-        .health_bar_bg 
        .flex_lower_left
+        .health_icon
+        .health_text
         .armor_background
           .armor
         .helmet_background
           .helmet
-        .health_text
-        .health_icon
-       .player_name
+       .flex_name_round 
+        .player_name 
+        .roundkills
+         .txt 1
        .bottom_bar
         .flex_kd
           .k_icon 
@@ -470,22 +469,17 @@ html
         .flex_money_bomb
           .money
            .moneys
-          .defuse
-           .defuse_image
-          .bomb_2
-           .bomb_image
+        .bomb_defuse_background
+        .bomb_defuse
         .grenades
         .weapon_icon
       #player5(class="player_container")
-       .arrow
-       .arrow_2
        .background
        .photo_container
         .photo_player 
           img(src='../../files/img/players/1.png')
-        .photo_player_shade
-       .health_shade
-       .Round_Kills
+        //- .photo_player_shade
+       //.Round_Kills
         .background2
         .icon
         .frags
@@ -495,16 +489,17 @@ html
        .top_bar
         .health_red
         .health_bar
-        .health_bar_bg 
-        .health_30
        .flex_lower_left
+        .health_icon
+        .health_text
         .armor_background
           .armor
         .helmet_background
           .helmet
-        .health_text
-        .health_icon
-       .player_name
+       .flex_name_round 
+        .player_name 
+        .roundkills
+         .txt 1 
        .bottom_bar
         .flex_kd
           .k_icon 
@@ -514,225 +509,208 @@ html
         .flex_money_bomb
           .money
            .moneys
-          .defuse
-           .defuse_image
-          .bomb_2
-           .bomb_image
+        .bomb_defuse_background
+        .bomb_defuse
         .grenades
         .weapon_icon
     .players_right_container 
       #player1(class="player_container")
-       .arrow
-       .arrow_2
        .background
        .photo_container
         .photo_player 
           img(src='../../files/img/players/1.png')
-        .photo_player_shade
-       .health_shade
-       .Round_Kills
-        .background2
-        .icon
-        .frags
+        //.photo_player_shade
        .diamond
        .number
        .flash
+       //.Round_Kills
+        .background2
+        .icon
+        .frags
        .top_bar
         .health_red
         .health_bar
-        .health_bar_b
        .flex_lower_right
-        .health_icon
-        .health_text
-        .armor_background
-          .armor
         .helmet_background
           .helmet
-       .player_name
+        .armor_background
+          .armor
+        .health_text
+        .health_icon
+       .flex_name_round_right 
+        .roundkills
+          .txt 1
+        .player_name 
        .bottom_bar
-        .flex_kd
-          .k_icon 
-          .k 
+        .flex_kd_right
+          .k
+          .k_icon  
+          .d
           .d_icon
-          .d 
-        .flex_money_bomb
+        .flex_money_bomb_right
           .money
            .moneys
-          .defuse
-           .defuse_image
-          .bomb_2
-           .bomb_image
+        .bomb_defuse_background
+        .bomb_defuse
         .grenades
         .weapon_icon
       #player2(class="player_container")
-       .arrow
-       .arrow_2
        .background
        .photo_container
         .photo_player 
           img(src='../../files/img/players/1.png')
-        .photo_player_shade
-       .health_shade
-       .Round_Kills
-        .background2
-        .icon
-        .frags
+        //.photo_player_shade
        .diamond
        .number
        .flash
+       //.Round_Kills
+        .background2
+        .icon
+        .frags
        .top_bar
         .health_red
         .health_bar
-        .health_bar_bg
        .flex_lower_right
-        .health_icon
-        .health_text
-        .armor_background
-          .armor
         .helmet_background
           .helmet
-       .player_name
+        .armor_background
+          .armor
+        .health_text
+        .health_icon
+       .flex_name_round_right 
+        .roundkills
+          .txt 1
+        .player_name 
        .bottom_bar
-        .flex_kd
-          .k_icon 
-          .k 
-          .d_icon
+        .flex_kd_right
+          .k
+          .k_icon  
           .d
-        .flex_money_bomb
+          .d_icon
+        .flex_money_bomb_right
           .money
            .moneys
-          .defuse
-           .defuse_image
-          .bomb_2
-           .bomb_image
+        .bomb_defuse_background
+        .bomb_defuse
         .grenades
         .weapon_icon
       #player3(class="player_container")
-       .arrow
-       .arrow_2
        .background
        .photo_container
         .photo_player 
           img(src='../../files/img/players/1.png')
-        .photo_player_shade
-       .health_shade
-       .Round_Kills
-        .background2
-        .icon
-        .frags
+        //.photo_player_shade
        .diamond
        .number
        .flash
+       //.Round_Kills
+        .background2
+        .icon
+        .frags
        .top_bar
         .health_red
         .health_bar
-        .health_bar_bg
        .flex_lower_right
-        .health_icon
-        .health_text
-        .armor_background
-          .armor
         .helmet_background
           .helmet
-       .player_name
+        .armor_background
+          .armor
+        .health_text
+        .health_icon
+       .flex_name_round_right 
+        .roundkills
+          .txt 1
+        .player_name 
        .bottom_bar
-        .flex_kd
-          .k_icon 
-          .k 
-          .d_icon
+        .flex_kd_right
+          .k
+          .k_icon  
           .d
-        .flex_money_bomb
+          .d_icon
+        .flex_money_bomb_right
           .money
            .moneys
-          .defuse
-           .defuse_image
-          .bomb_2
-           .bomb_image
+        .bomb_defuse_background
+        .bomb_defuse
         .grenades
         .weapon_icon
       #player4(class="player_container")
-       .arrow
-       .arrow_2
        .background
        .photo_container
         .photo_player 
           img(src='../../files/img/players/1.png')
-        .photo_player_shade
-       .health_shade
-       .Round_Kills
-        .background2
-        .icon
-        .frags
+        //.photo_player_shade
        .diamond
        .number
        .flash
+       //.Round_Kills
+        .background2
+        .icon
+        .frags
        .top_bar
         .health_red
         .health_bar
-        .health_bar_bg
        .flex_lower_right
-        .health_icon
-        .health_text
-        .armor_background
-          .armor
         .helmet_background
           .helmet
-       .player_name
+        .armor_background
+          .armor
+        .health_text
+        .health_icon
+       .flex_name_round_right 
+        .roundkills
+          .txt 1
+        .player_name 
        .bottom_bar
-        .flex_kd
-          .k_icon 
-          .k 
+        .flex_kd_right
+          .k
+          .k_icon  
+          .d
           .d_icon
-          .d 
-        .flex_money_bomb
+        .flex_money_bomb_right
           .money
            .moneys
-          .defuse
-           .defuse_image
-          .bomb_2
-           .bomb_image
+        .bomb_defuse_background
+        .bomb_defuse
         .grenades
         .weapon_icon
       #player5(class="player_container")
-       .arrow
-       .arrow_2
        .background
        .photo_container
         .photo_player 
           img(src='../../files/img/players/1.png')
-        .photo_player_shade
-       .health_shade
-       .Round_Kills
-        .background2
-        .icon
-        .frags
+        //.photo_player_shade
        .diamond
        .number
        .flash
+       //.Round_Kills
+        .background2
+        .icon
+        .frags
        .top_bar
         .health_red
         .health_bar
-        .health_bar_bg
        .flex_lower_right
-        .health_icon
-        .health_text
-        .armor_background
-          .armor
         .helmet_background
           .helmet
-       .player_name
+        .armor_background
+          .armor
+        .health_text
+        .health_icon
+       .flex_name_round_right 
+        .roundkills 
+          .txt 1
+        .player_name 
        .bottom_bar
-        .flex_kd
-          .k_icon 
-          .k 
+        .flex_kd_right
+          .k
+          .k_icon  
+          .d
           .d_icon
-          .d 
-        .flex_money_bomb
+        .flex_money_bomb_right
           .money
            .moneys
-          .defuse
-           .defuse_image
-          .bomb_2
-           .bomb_image
+        .bomb_defuse_background
+        .bomb_defuse
         .grenades
         .weapon_icon

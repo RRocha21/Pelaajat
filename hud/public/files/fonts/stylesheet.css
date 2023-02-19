@@ -591,4 +591,1176 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Arial';
+    src: url('Arial-BoldItalicMT.woff2') format('woff2'),
+        url('Arial-BoldItalicMT.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial CE';
+    src: url('Arial-BoldMT.woff2') format('woff2'),
+        url('Arial-BoldMT.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('Arial-BoldMT.woff2') format('woff2'),
+        url('Arial-BoldMT.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('ArialMT.woff2') format('woff2'),
+        url('ArialMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('Arial-BlackItalic.woff2') format('woff2'),
+        url('Arial-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial CE';
+    src: url('ArialCE-Italic.woff2') format('woff2'),
+        url('ArialCE-Italic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial CE';
+    src: url('ArialCE-BoldItalic.woff2') format('woff2'),
+        url('ArialCE-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('Arial-BoldItalicMT.woff2') format('woff2'),
+        url('Arial-BoldItalicMT.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial CE';
+    src: url('ArialCE.woff2') format('woff2'),
+        url('ArialCE.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('Arial-BoldMT.woff2') format('woff2'),
+        url('Arial-BoldMT.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('ArialNarrow-BoldItalic.woff2') format('woff2'),
+        url('ArialNarrow-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('Arial-MdmItl.woff2') format('woff2'),
+        url('Arial-MdmItl.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('ArialNarrow-Bold.woff2') format('woff2'),
+        url('ArialNarrow-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('Arial-Mdm.woff2') format('woff2'),
+        url('Arial-Mdm.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial CE MT';
+    src: url('ArialCEMTBlack-Regular.woff2') format('woff2'),
+        url('ArialCEMTBlack-Regular.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('Arial-Lgt.woff2') format('woff2'),
+        url('Arial-Lgt.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('ArialNarrow.woff2') format('woff2'),
+        url('ArialNarrow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('Arial-ItalicMT.woff2') format('woff2'),
+        url('Arial-ItalicMT.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('Arial-LgtItl.woff2') format('woff2'),
+        url('Arial-LgtItl.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('ArialNarrow-Italic.woff2') format('woff2'),
+        url('ArialNarrow-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('Arial-ItalicMT.woff2') format('woff2'),
+        url('Arial-ItalicMT.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('Arial-Black.woff2') format('woff2'),
+        url('Arial-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Nr XBold';
+    src: url('Cutmark-NrXBold.woff2') format('woff2'),
+        url('Cutmark-NrXBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Nr';
+    src: url('Cutmark-NrHeavyItalic.woff2') format('woff2'),
+        url('Cutmark-NrHeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Nr XBold';
+    src: url('Cutmark-NrXBoldItalic.woff2') format('woff2'),
+        url('Cutmark-NrXBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark XLight';
+    src: url('Cutmark-XLight.woff2') format('woff2'),
+        url('Cutmark-XLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Nr';
+    src: url('Cutmark-NrBold.woff2') format('woff2'),
+        url('Cutmark-NrBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Nr';
+    src: url('Cutmark-NrMediumItalic.woff2') format('woff2'),
+        url('Cutmark-NrMediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Nr';
+    src: url('Cutmark-NrBoldItalic.woff2') format('woff2'),
+        url('Cutmark-NrBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark XBold';
+    src: url('Cutmark-XBold.woff2') format('woff2'),
+        url('Cutmark-XBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Nr Demi';
+    src: url('Cutmark-NrDemiItalic.woff2') format('woff2'),
+        url('Cutmark-NrDemiItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Super';
+    src: url('Cutmark-SuperItalic.woff2') format('woff2'),
+        url('Cutmark-SuperItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Nr';
+    src: url('Cutmark-NrThinItalic.woff2') format('woff2'),
+        url('Cutmark-NrThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Nr';
+    src: url('Cutmark-NrThin.woff2') format('woff2'),
+        url('Cutmark-NrThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark XBold';
+    src: url('Cutmark-XBoldItalic.woff2') format('woff2'),
+        url('Cutmark-XBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Nr Super';
+    src: url('Cutmark-NrSuperItalic.woff2') format('woff2'),
+        url('Cutmark-NrSuperItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Nr XLight';
+    src: url('Cutmark-NrXLightItalic.woff2') format('woff2'),
+        url('Cutmark-NrXLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark';
+    src: url('Cutmark-Medium.woff2') format('woff2'),
+        url('Cutmark-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark';
+    src: url('Cutmark-Regular.woff2') format('woff2'),
+        url('Cutmark-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Nr';
+    src: url('Cutmark-NrMedium.woff2') format('woff2'),
+        url('Cutmark-NrMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark';
+    src: url('Cutmark-LightItalic.woff2') format('woff2'),
+        url('Cutmark-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark';
+    src: url('Cutmark-Thin.woff2') format('woff2'),
+        url('Cutmark-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark XLight';
+    src: url('Cutmark-XLightItalic.woff2') format('woff2'),
+        url('Cutmark-XLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark';
+    src: url('Cutmark-MediumItalic.woff2') format('woff2'),
+        url('Cutmark-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark';
+    src: url('Cutmark-ThinItalic.woff2') format('woff2'),
+        url('Cutmark-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Nr';
+    src: url('Cutmark-NrHeavy.woff2') format('woff2'),
+        url('Cutmark-NrHeavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Super';
+    src: url('Cutmark-Super.woff2') format('woff2'),
+        url('Cutmark-Super.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Nr';
+    src: url('Cutmark-NrRegular.woff2') format('woff2'),
+        url('Cutmark-NrRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Nr Demi';
+    src: url('Cutmark-NrDemi.woff2') format('woff2'),
+        url('Cutmark-NrDemi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Nr XLight';
+    src: url('Cutmark-NrXLight.woff2') format('woff2'),
+        url('Cutmark-NrXLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Nr Super';
+    src: url('Cutmark-NrSuper.woff2') format('woff2'),
+        url('Cutmark-NrSuper.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark';
+    src: url('Cutmark-Light.woff2') format('woff2'),
+        url('Cutmark-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Cn Super';
+    src: url('Cutmark-CnSuper.woff2') format('woff2'),
+        url('Cutmark-CnSuper.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Cn';
+    src: url('Cutmark-CnHeavy.woff2') format('woff2'),
+        url('Cutmark-CnHeavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Cn';
+    src: url('Cutmark-CnBold.woff2') format('woff2'),
+        url('Cutmark-CnBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Nr';
+    src: url('Cutmark-NrLight.woff2') format('woff2'),
+        url('Cutmark-NrLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Cn';
+    src: url('Cutmark-CnLightItalic.woff2') format('woff2'),
+        url('Cutmark-CnLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Demi';
+    src: url('Cutmark-DemiItalic.woff2') format('woff2'),
+        url('Cutmark-DemiItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark';
+    src: url('Cutmark-Heavy.woff2') format('woff2'),
+        url('Cutmark-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Nr';
+    src: url('Cutmark-NrLightItalic.woff2') format('woff2'),
+        url('Cutmark-NrLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Cn';
+    src: url('Cutmark-CnThin.woff2') format('woff2'),
+        url('Cutmark-CnThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark';
+    src: url('Cutmark-BoldItalic.woff2') format('woff2'),
+        url('Cutmark-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Cn';
+    src: url('Cutmark-CnRegular.woff2') format('woff2'),
+        url('Cutmark-CnRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Cn Demi';
+    src: url('Cutmark-CnDemiItalic.woff2') format('woff2'),
+        url('Cutmark-CnDemiItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark';
+    src: url('Cutmark-HeavyItalic.woff2') format('woff2'),
+        url('Cutmark-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Cn';
+    src: url('Cutmark-CnMedium.woff2') format('woff2'),
+        url('Cutmark-CnMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Cn Demi';
+    src: url('Cutmark-CnDemi.woff2') format('woff2'),
+        url('Cutmark-CnDemi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark';
+    src: url('Cutmark-Bold.woff2') format('woff2'),
+        url('Cutmark-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Cn Super';
+    src: url('Cutmark-CnSuperItalic.woff2') format('woff2'),
+        url('Cutmark-CnSuperItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Demi';
+    src: url('Cutmark-Demi.woff2') format('woff2'),
+        url('Cutmark-Demi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Cn';
+    src: url('Cutmark-CnLight.woff2') format('woff2'),
+        url('Cutmark-CnLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Cn XBold';
+    src: url('Cutmark-CnXBold.woff2') format('woff2'),
+        url('Cutmark-CnXBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Cn XLight';
+    src: url('Cutmark-CnXLightItalic.woff2') format('woff2'),
+        url('Cutmark-CnXLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Cn';
+    src: url('Cutmark-CnItalic.woff2') format('woff2'),
+        url('Cutmark-CnItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Cn XBold';
+    src: url('Cutmark-CnXBoldItalic.woff2') format('woff2'),
+        url('Cutmark-CnXBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark';
+    src: url('Cutmark-Italic.woff2') format('woff2'),
+        url('Cutmark-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Nr';
+    src: url('Cutmark-NrItalic.woff2') format('woff2'),
+        url('Cutmark-NrItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Cn';
+    src: url('Cutmark-CnHeavyItalic.woff2') format('woff2'),
+        url('Cutmark-CnHeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Cn';
+    src: url('Cutmark-CnThinItalic.woff2') format('woff2'),
+        url('Cutmark-CnThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Cn XLight';
+    src: url('Cutmark-CnXLight.woff2') format('woff2'),
+        url('Cutmark-CnXLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Cn';
+    src: url('Cutmark-CnBoldItalic.woff2') format('woff2'),
+        url('Cutmark-CnBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutmark Cn';
+    src: url('Cutmark-CnMediumItalic.woff2') format('woff2'),
+        url('Cutmark-CnMediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Compressed';
+    src: url('Goodland-CompressedUltraBoldItalic.woff2') format('woff2'),
+        url('Goodland-CompressedUltraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Compressed';
+    src: url('Goodland-CompressedExtraLightItalic.woff2') format('woff2'),
+        url('Goodland-CompressedExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Compressed';
+    src: url('Goodland-CompressedSemiBoldItalic.woff2') format('woff2'),
+        url('Goodland-CompressedSemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Compressed';
+    src: url('Goodland-CompressedItalic.woff2') format('woff2'),
+        url('Goodland-CompressedItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland';
+    src: url('Goodland-Light.woff2') format('woff2'),
+        url('Goodland-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Compressed';
+    src: url('Goodland-CompressedLightItalic.woff2') format('woff2'),
+        url('Goodland-CompressedLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland';
+    src: url('Goodland-ExtraBold.woff2') format('woff2'),
+        url('Goodland-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Compressed';
+    src: url('Goodland-CompressedMediumItalic.woff2') format('woff2'),
+        url('Goodland-CompressedMediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland';
+    src: url('Goodland-Bold.woff2') format('woff2'),
+        url('Goodland-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland';
+    src: url('Goodland-Medium.woff2') format('woff2'),
+        url('Goodland-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Condensed';
+    src: url('Goodland-CondensedBold.woff2') format('woff2'),
+        url('Goodland-CondensedBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland';
+    src: url('Goodland-Regular.woff2') format('woff2'),
+        url('Goodland-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland';
+    src: url('Goodland-SemiBold.woff2') format('woff2'),
+        url('Goodland-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland';
+    src: url('Goodland-ExtraLight.woff2') format('woff2'),
+        url('Goodland-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland';
+    src: url('Goodland-UltraBold.woff2') format('woff2'),
+        url('Goodland-UltraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Condensed';
+    src: url('Goodland-CondensedMedium.woff2') format('woff2'),
+        url('Goodland-CondensedMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Condensed';
+    src: url('Goodland-Condensed.woff2') format('woff2'),
+        url('Goodland-Condensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Condensed';
+    src: url('Goodland-CondensedSemiBold.woff2') format('woff2'),
+        url('Goodland-CondensedSemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Condensed';
+    src: url('Goodland-CondensedLight.woff2') format('woff2'),
+        url('Goodland-CondensedLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Condensed';
+    src: url('Goodland-CondensedUltraBold.woff2') format('woff2'),
+        url('Goodland-CondensedUltraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Condensed';
+    src: url('Goodland-CondensedExtraBold.woff2') format('woff2'),
+        url('Goodland-CondensedExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Compressed';
+    src: url('Goodland-CompressedBold.woff2') format('woff2'),
+        url('Goodland-CompressedBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Compressed';
+    src: url('Goodland-CompressedMedium.woff2') format('woff2'),
+        url('Goodland-CompressedMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Compressed';
+    src: url('Goodland-CompressedLight.woff2') format('woff2'),
+        url('Goodland-CompressedLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Compressed';
+    src: url('Goodland-CompressedUltraBold.woff2') format('woff2'),
+        url('Goodland-CompressedUltraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Condensed';
+    src: url('Goodland-CondensedExtraLight.woff2') format('woff2'),
+        url('Goodland-CondensedExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Compressed';
+    src: url('Goodland-CompressedExtraLight.woff2') format('woff2'),
+        url('Goodland-CompressedExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Compressed';
+    src: url('Goodland-CompressedExtraBold.woff2') format('woff2'),
+        url('Goodland-CompressedExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Compressed';
+    src: url('Goodland-Compressed.woff2') format('woff2'),
+        url('Goodland-Compressed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Compressed';
+    src: url('Goodland-CompressedSemiBold.woff2') format('woff2'),
+        url('Goodland-CompressedSemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland';
+    src: url('Goodland-Italic.woff2') format('woff2'),
+        url('Goodland-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland';
+    src: url('Goodland-LightItalic.woff2') format('woff2'),
+        url('Goodland-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland';
+    src: url('Goodland-ExtraBoldItalic.woff2') format('woff2'),
+        url('Goodland-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland';
+    src: url('Goodland-ExtraLightItalic.woff2') format('woff2'),
+        url('Goodland-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland';
+    src: url('Goodland-BoldItalic.woff2') format('woff2'),
+        url('Goodland-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Condensed';
+    src: url('Goodland-CondensedLightItalic.woff2') format('woff2'),
+        url('Goodland-CondensedLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Condensed';
+    src: url('Goodland-CondensedItalic.woff2') format('woff2'),
+        url('Goodland-CondensedItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Condensed';
+    src: url('Goodland-CondensedSemiBoldItalic.woff2') format('woff2'),
+        url('Goodland-CondensedSemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland';
+    src: url('Goodland-UltraBoldItalic.woff2') format('woff2'),
+        url('Goodland-UltraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Condensed';
+    src: url('Goodland-CondensedMediumItalic.woff2') format('woff2'),
+        url('Goodland-CondensedMediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Condensed';
+    src: url('Goodland-CondensedExtraLightItalic.woff2') format('woff2'),
+        url('Goodland-CondensedExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Compressed';
+    src: url('Goodland-CompressedExtraBoldItalic.woff2') format('woff2'),
+        url('Goodland-CompressedExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland';
+    src: url('Goodland-SemiBoldItalic.woff2') format('woff2'),
+        url('Goodland-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Compressed';
+    src: url('Goodland-CompressedBoldItalic.woff2') format('woff2'),
+        url('Goodland-CompressedBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Condensed';
+    src: url('Goodland-CondensedUltraBoldItalic.woff2') format('woff2'),
+        url('Goodland-CondensedUltraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Condensed';
+    src: url('Goodland-CondensedBoldItalic.woff2') format('woff2'),
+        url('Goodland-CondensedBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland';
+    src: url('Goodland-MediumItalic.woff2') format('woff2'),
+        url('Goodland-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodland Condensed';
+    src: url('Goodland-CondensedExtraBoldItalic.woff2') format('woff2'),
+        url('Goodland-CondensedExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
 

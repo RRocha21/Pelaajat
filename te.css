@@ -1,0 +1,133 @@
+
+.flex_kd {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    left: 89px;
+    bottom: 3px;
+    z-index: 293;
+    height: 16px;
+    width: 96px;
+    /* box-sizing: border-box; */
+    /*border: 2px solid blue;
+    */
+    transition: all 0.5s ease 0s;
+  }
+
+  .flex_kd>.k_icon {
+    background-image: url(../../files/img/kills.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 16px;
+    width: 15px;
+    /* margin-left: 3px; */
+  }
+  
+  .flex_kd>.d_icon {
+    background-image: url(../../files/img/deaths.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 16px;
+    width: 15px;
+    margin-left: 7px;
+  }
+  
+  .flex_kd>.k {
+    font-size: 16px;
+    font-family: 'Cutmark Xlight';
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(236,236,236);
+    text-transform: uppercase;
+    /* font-weight: 600; */
+    letter-spacing: 2;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: -1px;
+    margin-left: 5px;
+  }
+  
+  .flex_kd>.d {
+    font-size: 16px;
+    font-family: 'Cutmark Xlight';
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(236,236,236);
+    text-transform: uppercase;
+    /* font-weight: 600; */
+    letter-spacing: 2;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: -1px;
+    margin-left: 5px;
+  }
+
+  .flex_kd_right {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: absolute;
+    right: 90px;
+    bottom: 4px;
+    z-index: 293;
+    height: 16px;
+    width: 96px;
+    /* box-sizing: border-box; */
+    /*border: 2px solid blue;
+    */
+    transition: all 0.5s ease 0s;
+  }
+
+  .flex_kd_right>.k_icon {
+    background-image: url(../../files/img/kills.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 16px;
+    width: 15px;
+    /* margin-left: 3px; */
+    margin-right: 7px;
+  }
+  
+  .flex_kd_right>.d_icon {
+    background-image: url(../../files/img/deaths.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 16px;
+    width: 15px;
+    /* margin-right: 7px; */
+  }
+  
+  .flex_kd_right>.k {
+    font-size: 16px;
+    font-family: 'Cutmark Xlight';
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(236,236,236);
+    text-transform: uppercase;
+    /* font-weight: 600; */
+    letter-spacing: 2;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: -1px;
+    margin-right: 5px;
+  }
+  
+  .flex_kd_right>.d {
+    font-size: 16px;
+    font-family: 'Cutmark Xlight';
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(236,236,236);
+    text-transform: uppercase;
+    /* font-weight: 600; */
+    letter-spacing: 2;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: -1px;
+    margin-right: 5px;
+  }
