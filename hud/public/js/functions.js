@@ -102,7 +102,6 @@ function addPlayer(player){
 }
 
 function addSponsor(sponsor){
-    console.log("passwicheuidh");
     $.ajax({
         type: "POST",
         url: "/api/sponsors",
@@ -118,8 +117,8 @@ function addSponsor(sponsor){
 
 function loadSponsor(sponsor){
     $("#sponsor_img").attr("src", "/sponsors/sponsor.png").show();
-    // $("#avatar_img").show(); 
-    // $("#avatar").val(player ? player.avatar : "");
+    $("#sponsor_img_2").attr("src", "/sponsors/sponsor_2.png").show();
+    $("#sponsor_img_3").attr("src", "/sponsors/sponsor_3.png").show();
 }
 
 

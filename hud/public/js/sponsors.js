@@ -1,7 +1,6 @@
 $(document).ready(function(){
     let id = null;
 
-    console.log("vnrijhsdf");
     loadSponsor();
     $("#save_sponsor").click(function(e){
         e.preventDefault();

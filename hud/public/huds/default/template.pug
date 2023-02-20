@@ -31,20 +31,33 @@ html
       //- .background
       //- .glow 
      .MapPick_BG
+      .MapPick_Upper
+       .Team_picked Picked
+       .Team_winner Winner 
+       .Result Result
       .Map1
-        .Team_Name FTW ESPORTS
+        .Team_Name
+        .Team_Winner
+        .Currently
+         .txt Currently Playing
         .Map
         .Map_Shade
         .Map_Name Overpass
         .Map_Result 16 - 12
       .Map2 
-        .Team_Name FTW ESPORTS
+        .Team_Name
+        .Team_Winner
+        .Currently
+         .txt Currently Playing
         .Map
         .Map_Shade
         .Map_Name Overpass
         .Map_Result 16 - 12
       .Map3
-        .Team_Name FTW ESPORTS
+        .Team_Name
+         .txt Decider
+        .Currently
+         .txt Currently Playing
         .Map
         .Map_Shade
         .Map_Name Overpass
@@ -121,12 +134,6 @@ html
               .Result
             .Round_n15
               .Result 
-     .win_container
-      .chicken
-      .bg_container
-       .bg
-       .text
-      .bars
      .topbar_container
       //.topbar_i_logo
         .background
@@ -137,7 +144,7 @@ html
         .vs_txt vs
         .line1 
         .line2
-        .title PLAYERS ALIVE
+        .title Players Alive
         .player_count_right
           .right_count 
         .player_count_left   
@@ -176,6 +183,7 @@ html
       .bomb_countdown_container
         .background 
         .bomb
+    .Pause_container
       .Pause_Left
         .background
         .Pause_Text Tactical Pause
@@ -194,14 +202,11 @@ html
          .pause_2
          .pause_3
          .pause_4
-      //.win_container_left
-      //.win_container_right
-      //.pause_container_left
-      //.pause_container_right
-      //.win_text_left 
-        .text WINS THE ROUND!
-      //.win_text_right 
-        .text WINS THE ROUND!
+    .Win_container
+      .win_container_left
+        .txt Wins The Round!
+      .win_container_right 
+        .txt Wins The Round!
     .Progress_Bar
       .Left_Team 
         .Background
@@ -455,7 +460,6 @@ html
         .grenades
         .weapon_icon
       #player4(class="player_container")
-       .arrow
        .background
        .photo_container
         .photo_player 
@@ -720,7 +724,7 @@ html
         .health_text
         .health_icon
        .flex_name_round_right 
-        .roundkills 
+        .roundkills
           .txt 1
         .player_name 
        .bottom_bar

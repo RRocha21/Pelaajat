@@ -1,167 +1,73 @@
-
-.Team_B {
+.Win_container {
   position: absolute;
-  right: 565px;
-  top: 175px;
-  width: 210px;
-  height: 80px;
-  z-index: 18;
-  background: rgba(0,0,0, 0.75);
-  transform: translateX(200px);
-  -webkit-transform: translateX(200px);
-  -moz-transform: translateX(200px);
-  -ms-transform: translateX(200px);
-  -o-transform: translateX(200px);
-  opacity: 0;
+  left: 425px;
+  top: 101px;
+  width: 1070px;
+  height: 35px;
+  z-index: 323;
   overflow: hidden;
 }
 
-.Team_B>.separator1 {
-  position: absolute;
-  right: 103px;
-  top: 10px;
-  width: 4px;
-  height: 60px;
-  z-index: 210;
-  background: rgb(236,236,236);
-}
-
-.Team_B>.TeamMoney {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  width: 105px;
-  height: 80px;
-  z-index: 208;
-  /* background: rgb(47,250,47); */
-}
-
-.Team_B>.TeamMoney>.Upper_Container {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  width: 105px;
-  height: 43px;
-  z-index: 208;
-  /* background: rgb(47,250,47); */
-}
-
-.Team_B>.TeamMoney>.Upper_Container>.txt {
+.Win_container>.win_container_left {
   position: absolute;
   left: 0px;
-  top: 5px;
-  width: 105px;
-  height: 45px;
-  z-index: 208;
-  /* opacity: 0.3; */
-  font-size: 18px;
+  top: 0px;
+  width: 445px;
+  height: 35px;
+  z-index: 324;
+  background-color: rgb(0,0,0,0.75);
+  transform: translateY(-30px);
+  -webkit-transform: translateY(-30px);
+  -moz-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  -o-transform: translateY(-30px);
+}
+
+.Win_container>.win_container_left>.txt {
+  position: absolute;
+  font-size: 30px;
   font-family: 'Cutmark';
   font-weight: 300;
   font-style: normal;
-  color: rgb(255,255,255);
-  /* text-transform: uppercase; */
-  /* font-weight: 600; */
-  letter-spacing: 1.8;
+  color: rgb(255, 255, 255);
   line-height: 1;
+  letter-spacing: 1.1;
   text-align: center;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 487;
 }
 
-.Team_B>.TeamMoney>.Lower_Container {
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
-  width: 95px;
-  height: 22px;
-  z-index: 208;
-  /* background: rgb(47,250,47); */
-}
-
-.Team_B>.TeamMoney>.Lower_Container>.txt {
+.Win_container>.win_container_right {
   position: absolute;
   right: 0px;
   top: 0px;
-  width: 95px;
-  height: 22px;
-  z-index: 208;
-  /* opacity: 0.3; */
-  font-size: 18px;
-  font-family: 'Cutmark Xlight';
-  font-weight: 600;
-  font-style: normal;
-  color: rgb(255,255,255);
-  text-transform: uppercase;
-  /* font-weight: 600; */
-  letter-spacing: 2;
-  line-height: 1;
-  text-align: center;
+  width: 445px;
+  height: 35px;
+  z-index: 324;
+  background-color: rgb(0,0,0,0.75);
+  transform: translateY(-30px);
+  -webkit-transform: translateY(-30px);
+  -moz-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  -o-transform: translateY(-30px);
 }
 
-.Team_B>.EquipValue {
+.Win_container>.win_container_right>.txt {
   position: absolute;
-  right: 105px;
-  top: 0px;
-  width: 105px;
-  height: 80px;
-  z-index: 208;
-  /* background: rgb(47,47,250); */
-}
-
-.Team_B>.EquipValue>.Upper_Container {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  width: 105px;
-  height: 43px;
-  z-index: 208;
-  /* background: rgb(47,250,47); */
-}
-
-.Team_B>.EquipValue>.Upper_Container>.txt {
-  position: absolute;
-  right: -1px;
-  top: 5px;
-  width: 105px;
-  height: 45px;
-  z-index: 208;
-  /* opacity: 0.3; */
-  font-size: 18px;
+  font-size: 30px;
   font-family: 'Cutmark';
   font-weight: 300;
   font-style: normal;
-  color: rgb(255,255,255);
-  /* text-transform: uppercase; */
-  /* font-weight: 600; */
-  letter-spacing: 1.8;
-  line-height: 1;
+  color: rgb(255, 255, 255);
+  line-height: 1.3;
+  letter-spacing: 1.1;
   text-align: center;
-}
-
-.Team_B>.EquipValue>.Lower_Container {
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
-  width: 95px;
-  height: 22px;
-  z-index: 208;
-  /* background: rgb(47,250,47); */
-}
-
-.Team_B>.EquipValue>.Lower_Container>.txt {
-  position: absolute;
-  right: 0px;
+  left: 0px;
   top: 0px;
-  width: 95px;
-  height: 22px;
-  z-index: 208;
-  /* opacity: 0.3; */
-  font-size: 18px;
-  font-family: 'Cutmark Xlight';
-  font-weight: 600;
-  font-style: normal;
-  color: rgb(236,236,236);
-  text-transform: uppercase;
-  /* font-weight: 600; */
-  letter-spacing: 2;
-  line-height: 1;
-  text-align: center;
+  width: 100%;
+  height: 100%;
+  z-index: 487;
 }
