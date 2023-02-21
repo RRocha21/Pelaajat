@@ -12,6 +12,7 @@ function loadMatch(data) {
             }
             $teamList.append($option);
         }, this);
+
         if (data) {
             $("#botype").val(data.match);
             $("#team_1_score").val("0").val(data.team_1.map_score);

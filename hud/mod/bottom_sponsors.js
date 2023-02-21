@@ -10,7 +10,9 @@ exports.getBottomSponsors = (req, res) => {
         return res.json({bottom_sponsors: bottom_sponsorList});
     });
 };
+
 exports.addBottomSponsor = (req, res) => {
+
     let bottom_sponsor = req.body;
     delete bottom_sponsor._id;
 
@@ -21,6 +23,7 @@ exports.addBottomSponsor = (req, res) => {
         return res.status(200).json({id:bottom_newSponsor["_id"]});
     });
 };
+
 exports.updateBottomSponsor = (req, res) => {
     let bottom_sponsor = req.body;
     let bottom_sponsorId = bottom_sponsor._id;
@@ -50,7 +53,8 @@ exports.updateBottomSponsor = (req, res) => {
     db.find({_id:bottom_sponsorId}, removeLogoFile);
 };
 exports.deleteBottomSponsor = (req,res) => {
-    let bottom_sponsorId = req.body.sponsorId;
+    
+    let bottom_sponsorId = req.body.bottom_sponsorId;
 
     function removeSponsor(err, bottom_sponsorList) {
         if(err) return res.sendStatus(500);

@@ -4,4 +4,7 @@ database.players = new Datastore({ filename: './databases/players' });
 database.teams = new Datastore({ filename: './databases/teams' });
 database.huds = new Datastore({ filename: './databases/huds' });
 database.bottom_sponsors = new Datastore({ filename: './databases/bottom_sponsors' });
+database.left_sponsors = new Datastore({ filename: './databases/left_sponsors' });
+database.right_sponsors = new Datastore({ filename: './databases/right_sponsors' });
+database.video_sponsors = new Datastore({ filename: './databases/video_sponsors' });
 module.exports = database;

@@ -1970,7 +1970,7 @@ sub {
 .observed_container {
     position: absolute;
     left: 660px;
-    top: 920px;
+    top: 910px;
     width: 600px;
     height: 74px;
     z-index: 208;
@@ -5218,12 +5218,12 @@ sub {
     width: 340px;
     height: 60px;
     z-index: 220;
-    background-color: rgba(0,0,0,0.75);
+    /* background-color: rgba(0,0,0,0.75); */
 }
 
 .side_left_sponsor>.inner {
     background-image: url("../../sponsors/side_sponsor_left.png");
-    background-size: 90%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -5244,12 +5244,12 @@ sub {
     width: 340px;
     height: 60px;
     z-index: 220;
-    background-color: rgba(0,0,0,0.75);
+    /* background-color: rgba(0,0,0,0.75); */
 }
 
 .side_right_sponsor>.inner {
     background-image: url("../../sponsors/side_sponsor_right.png");
-    background-size: 90%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -5266,23 +5266,23 @@ sub {
     background-repeat: no-repeat;
     background-position: center;
     left: 660px;
-    top: 1000px;
+    top: 990px;
     width: 600px;
-    height: 60px;
+    height: 73px;
     z-index: 220;
-    background-color: rgba(0,0,0,0.75);
+    /* background-color: rgba(0,0,0,0.75); */
 }
 
 .sponsor>.inner {
     background-image: url("../../sponsors/sponsor.png");
-    background-size: 90%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    left: -4px;
+    left: 0px;
     top: 0px;
     width: 600px;
-    height: 60px;
+    height: 73px;
     z-index: 505;
 }
 

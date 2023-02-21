@@ -17,11 +17,14 @@ $(document).ready(function(){
         let form = $('form')[2];
         let form_data = new FormData(form);
         let localId = $("#bottom_sponsors").val();
+
+
         console.log(form_data);
         if(localId == "default"){
             addBottomSponsor(form_data);
         } else {
-            updateBottomSponsor(form_data, $("#id").val());
+            form_data.set("_id", id);
+            updateBottomSponsor(form_data, id);
         }
     });
     $("#delete_bottom_sponsor").click(function(){

@@ -1,0 +1,32 @@
+.row
+		form(enctype="multipart/form-data").col.s12
+			.row
+				.input-field.col.s12.m12
+					select#video_sponsors
+						option(value='default', selected='') New Sponsor
+				.input-field.col.s12.m12
+					input#video_sponsor_name.validate(placeholder='Video Sponsor Name', type='text', name="video_sponsor_name")
+					input#id(type='hidden', name="_id", value='')
+					label(for='video_sponsor_name') Video Sponsor Name
+				.input-field.col.s12.m12
+					input#video_duration.validate(placeholder='Video Duration(seconds)', type='text', name="video_duration")
+					input#id(type='hidden', name="_id", value='')
+					label(for='video_duration') Video Duration(seconds)
+				.input-field.col.s12.m6
+					.file-field.input-field
+						.btn
+							span File
+							input#video_sponsor_logo(type='file', name='logo')
+						.file-path-wrapper
+							input.file-path.validate(type='text')
+							label Image Size for Best Quality and No Deformation: 1920x1080px
+				.input-field.col.s12.m6
+					.col.s12.m10
+						.card-panel.grey.lighten-5.z-depth-1
+							.row
+								.col.s12
+									video.circle.responsive-video#video_sponsor_logo_img(alt='')
+									// notice the "circle" class
+				.input-field.col.s12
+					a.waves-effect.waves-light.btn#save_video_sponsor Save Sponsor
+					a.waves-effect.waves-light.btn.disabled#delete_video_sponsor Delete Sponsor

@@ -9,6 +9,9 @@ const http = require('http'),
     players = require('./mod/players.js'),
     teams = require('./mod/teams.js'),
     bottom_sponsors = require('./mod/bottom_sponsors.js'),
+    left_sponsors = require('./mod/left_sponsors.js'),
+    right_sponsors = require('./mod/right_sponsors.js'),
+    video_sponsors = require('./mod/video_sponsors.js'),
     huds = require('./mod/huds.js');
 
 var version = "1.1";
@@ -47,9 +50,42 @@ var storage_2 = multer.diskStorage({
     }
 });
 
+var storage_3 = multer.diskStorage({
+    destination: function(req, file, cb) {
+        cb(null, 'public/left_sponsors')
+    },
+    filename: function(req, file, cb) {
+        cb(null,  Date.now() + ".png")
+        
+    }
+});
+
+var storage_4 = multer.diskStorage({
+    destination: function(req, file, cb) {
+        cb(null, 'public/right_sponsors')
+    },
+    filename: function(req, file, cb) {
+        cb(null,  Date.now() + ".png")
+        
+    }
+});
+
+var storage_5 = multer.diskStorage({
+    destination: function(req, file, cb) {
+        cb(null, 'public/video_sponsors')
+    },
+    filename: function(req, file, cb) {
+        cb(null,  Date.now() + ".webm")
+        
+    }
+});
+
 var upload = multer({ storage: storage });
 var upload_1 = multer({ storage: storage_1 });
 var upload_2 = multer({ storage: storage_2 });
+var upload_3 = multer({ storage: storage_3 });
+var upload_4 = multer({ storage: storage_4 });
+var upload_5 = multer({ storage: storage_5 });
 
 const config = huds.loadConfig();
 
@@ -143,6 +179,42 @@ app.patch('/api/bottom_sponsors', upload_2.single('logo'), bottom_sponsors.updat
 app.delete('/api/bottom_sponsors', bottom_sponsors.deleteBottomSponsor);
 
 app.delete('/api/bottom_sponsors_logo', bottom_sponsors.deleteBottomLogo);
+
+app.get('/left_sponsors', left_sponsors.render);
+
+app.get('/api/left_sponsors', left_sponsors.getLeftSponsors);
+
+app.post('/api/left_sponsors', upload_3.single('logo'), left_sponsors.addLeftSponsor);
+
+app.patch('/api/left_sponsors', upload_3.single('logo'), left_sponsors.updateLeftSponsor);
+
+app.delete('/api/left_sponsors', left_sponsors.deleteLeftSponsor);
+
+app.delete('/api/left_sponsors_logo', left_sponsors.deleteLeftLogo);
+
+app.get('/right_sponsors', right_sponsors.render);
+
+app.get('/api/right_sponsors', right_sponsors.getRightSponsors);
+
+app.post('/api/right_sponsors', upload_4.single('logo'), right_sponsors.addRightSponsor);
+
+app.patch('/api/right_sponsors', upload_4.single('logo'), right_sponsors.updateRightSponsor);
+
+app.delete('/api/right_sponsors', right_sponsors.deleteRightSponsor);
+
+app.delete('/api/right_sponsors_logo', right_sponsors.deleteRightLogo);
+
+app.get('/video_sponsors', video_sponsors.render);
+
+app.get('/api/video_sponsors', video_sponsors.getVideoSponsors);
+
+app.post('/api/video_sponsors', upload_5.single('logo'), video_sponsors.addVideoSponsor);
+
+app.patch('/api/video_sponsors', upload_5.single('logo'), video_sponsors.updateVideoSponsor);
+
+app.delete('/api/video_sponsors', video_sponsors.deleteVideoSponsor);
+
+app.delete('/api/video_sponsors_logo', video_sponsors.deleteVideoLogo);
 
 
 app.get('/av/:sid([0-9]+)', (req, res) => {

@@ -89,6 +89,202 @@ function loadAvatar(steamid) {
     // }
 }
 
+function loadBottomSponsors(number) {
+
+
+    // GET ALL DB PLAYERS
+    function showGetPlayers()
+    {
+         var result = null;
+         var scriptUrl = "/api/bottom_sponsors";
+         $.ajax({
+            url: scriptUrl,
+            type: 'get',
+            dataType: 'html',
+            async: false,
+            success: function(data) {
+                result = data;
+            } 
+         });
+         return result;
+    }
+
+    // ORGANIZE PLAYERS
+    playersArray = JSON.parse(showGetPlayers()).bottom_sponsors;
+
+    // DECLARE VARIABLES
+    let sid_new = [];
+    var avatar_link = "1";
+
+    // LOOP THROUGH PLAYERS TO KNOW IF THEY'RE SUBMITTED
+    playersArray.forEach(element => {
+        sid_new.push(element.sid); 
+    });
+
+    sid_new = playersArray[number];
+
+    if (sid_new !== undefined) {
+        if (sid_new.logo !== undefined) {
+            avatar_link = sid_new.logo.slice(0, -4);
+        } else {
+            avatar_link = "1";
+        }
+    } else {
+        avatar_link = "1";
+    }
+
+    return avatar_link;
+}
+
+function loadLeftSponsors(number) {
+
+
+    // GET ALL DB PLAYERS
+    function showGetPlayers()
+    {
+         var result = null;
+         var scriptUrl = "/api/left_sponsors";
+         $.ajax({
+            url: scriptUrl,
+            type: 'get',
+            dataType: 'html',
+            async: false,
+            success: function(data) {
+                result = data;
+            } 
+         });
+         return result;
+    }
+
+    // ORGANIZE PLAYERS
+    playersArray = JSON.parse(showGetPlayers()).left_sponsors;
+
+    // DECLARE VARIABLES
+    let sid_new = [];
+    var avatar_link = "1";
+
+    // LOOP THROUGH PLAYERS TO KNOW IF THEY'RE SUBMITTED
+    playersArray.forEach(element => {
+        sid_new.push(element.sid); 
+    });
+
+    sid_new = playersArray[number];
+
+    if (sid_new !== undefined) {
+        if (sid_new.logo !== undefined) {
+            avatar_link = sid_new.logo.slice(0, -4);
+        } else {
+            avatar_link = "1";
+        }
+    } else {
+        avatar_link = "1";
+    }
+
+    return avatar_link;
+}
+
+function loadRightSponsors(number) {
+
+
+    // GET ALL DB PLAYERS
+    function showGetPlayers()
+    {
+         var result = null;
+         var scriptUrl = "/api/right_sponsors";
+         $.ajax({
+            url: scriptUrl,
+            type: 'get',
+            dataType: 'html',
+            async: false,
+            success: function(data) {
+                result = data;
+            } 
+         });
+         return result;
+    }
+
+    // ORGANIZE PLAYERS
+    playersArray = JSON.parse(showGetPlayers()).right_sponsors;
+
+    // DECLARE VARIABLES
+    let sid_new = [];
+    var avatar_link = "1";
+
+    // LOOP THROUGH PLAYERS TO KNOW IF THEY'RE SUBMITTED
+    playersArray.forEach(element => {
+        sid_new.push(element.sid); 
+    });
+
+    sid_new = playersArray[number];
+
+    if (sid_new !== undefined) {
+        if (sid_new.logo !== undefined) {
+            avatar_link = sid_new.logo.slice(0, -4);
+        } else {
+            avatar_link = "1";
+        }
+    } else {
+        avatar_link = "1";
+    }
+
+    return avatar_link;
+}
+
+function loadVideoSponsors(number) {
+
+
+    // GET ALL DB PLAYERS
+    function showGetPlayers()
+    {
+         var result = null;
+         var scriptUrl = "/api/video_sponsors";
+         $.ajax({
+            url: scriptUrl,
+            type: 'get',
+            dataType: 'html',
+            async: false,
+            success: function(data) {
+                result = data;
+            } 
+         });
+         return result;
+    }
+
+    // ORGANIZE PLAYERS
+    playersArray = JSON.parse(showGetPlayers()).video_sponsors;
+
+    // DECLARE VARIABLES
+    let sid_new = [];
+    var avatar_link = "1";
+
+    // LOOP THROUGH PLAYERS TO KNOW IF THEY'RE SUBMITTED
+    playersArray.forEach(element => {
+        sid_new.push(element.sid); 
+    });
+
+    sid_new = playersArray[number];
+
+    if (sid_new !== undefined) {
+        if (sid_new.logo !== undefined) {
+            avatar_link = sid_new.logo.slice(0, -5);
+        } else {
+            avatar_link = "1";
+        }
+        if (sid_new.video_duration !== '') {
+            video_duration = sid_new.video_duration;
+        } else {
+            video_duration = '15';
+        }
+    } else {
+        avatar_link = "1";
+        video_duration = "1";
+    }
+
+    let arr = [avatar_link, video_duration];
+
+    return arr;
+}
+
 $(document).ready(function () {
     var slotted = [];
     var meth = {
