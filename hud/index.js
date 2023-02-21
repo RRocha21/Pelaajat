@@ -8,7 +8,7 @@ const http = require('http'),
     address = require('ip').address(),
     players = require('./mod/players.js'),
     teams = require('./mod/teams.js'),
-    sponsors = require('./mod/sponsors.js'),
+    bottom_sponsors = require('./mod/bottom_sponsors.js'),
     huds = require('./mod/huds.js');
 
 var version = "1.1";
@@ -39,10 +39,10 @@ var storage_1 = multer.diskStorage({
 
 var storage_2 = multer.diskStorage({
     destination: function(req, file, cb) {
-        cb(null, 'public/sponsors')
+        cb(null, 'public/bottom_sponsors')
     },
     filename: function(req, file, cb) {
-        cb(null,  "sponsor" + ".png")
+        cb(null,  Date.now() + ".png")
         
     }
 });
@@ -132,9 +132,17 @@ app.delete("/api/players", players.deletePlayer);
 
 app.delete("/api/players_avatar", players.deleteAvatar);
 
-// app.get("/sponsors", sponsors.render);
+app.get('/bottom_sponsors', bottom_sponsors.render);
 
-app.post("/api/sponsors", upload_2.single("avatar"), sponsors.addSponsor);
+app.get('/api/bottom_sponsors', bottom_sponsors.getBottomSponsors);
+
+app.post('/api/bottom_sponsors', upload_2.single('logo'), bottom_sponsors.addBottomSponsor);
+
+app.patch('/api/bottom_sponsors', upload_2.single('logo'), bottom_sponsors.updateBottomSponsor);
+
+app.delete('/api/bottom_sponsors', bottom_sponsors.deleteBottomSponsor);
+
+app.delete('/api/bottom_sponsors_logo', bottom_sponsors.deleteBottomLogo);
 
 
 app.get('/av/:sid([0-9]+)', (req, res) => {

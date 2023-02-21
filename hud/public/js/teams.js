@@ -11,10 +11,14 @@ $(document).ready(function(){
 
     });
     $("#save_team").click(function(e){
+        console.log("save_team")
         e.preventDefault();
         let form = $('form')[0];
         let form_data = new FormData(form);
         let localId = $("#teams").val();
+
+
+        console.log("form_data: " + form_data)
 
         if(localId == "default"){
             addTeam(form_data);

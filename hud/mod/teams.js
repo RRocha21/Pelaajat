@@ -24,6 +24,7 @@ exports.addTeam = (req, res) => {
 exports.updateTeam = (req, res) => {
     let team = req.body;
     let teamId = team._id;
+
     delete team._id;
 
     if(req.file) team.logo = req.file.filename;

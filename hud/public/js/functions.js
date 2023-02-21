@@ -1,6 +1,6 @@
 var teamsOverall;
 var playersOverall;
-var sponsorsOverall;
+var bottom_sponsorsOverall;
 
 function addTeam(team){
     $.ajax({
@@ -43,6 +43,7 @@ function deleteLogo(teamId){
 }
 
 function updateTeam(team, teamId){
+    console.log(team);
     $.ajax({
         type: "PATCH",
         url: "/api/teams",
@@ -86,6 +87,94 @@ function loadTeam(team){
     if(team && team.logo) $("#team_logo_img").show();
 }
 
+// ---------------------------------
+
+function addBottomSponsor(bottom_sponsor){
+    $.ajax({
+        type: "POST",
+        url: "/api/bottom_sponsors",
+        data: bottom_sponsor,
+        cache:false,
+        contentType:false,
+        processData:false,
+        success: function(res){
+            listBottomSponsors(res.id)
+        }
+    });
+}
+
+function deleteBottomSponsor(bottom_sponsorId){
+    $.ajax({
+        type: "DELETE",
+        url: "/api/bottom_sponsors",
+        data: {bottom_sponsorId:bottom_sponsorId},
+        success: function(res){
+            listBottomSponsors();
+            loadBottomSponsor();
+            $("#delete_bottom_sponsor").addClass("disabled")
+        }
+    });
+}
+
+function deleteBottomLogo(bottom_sponsorId){
+    console.log("olá");
+    $.ajax({
+        type: "DELETE",
+        url: "/api/bottom_sponsors",
+        data: {bottom_sponsorId:bottom_sponsorId},
+        success: function(res){
+            listBottomSponsors(bottom_sponsorId);
+            $("#bottom_sponsor_logo_img").attr("src", "").hide();
+        }
+    });
+}
+
+function updateBottomSponsor(bottom_sponsor, bottom_sponsorId){
+    $.ajax({
+        type: "PATCH",
+        url: "/api/bottom_sponsors",
+        data: bottom_sponsor,
+        cache:false,
+        contentType:false,
+        processData:false,
+        success: function(){
+            listBottomSponsors(bottom_sponsorId)
+        }
+    });
+}
+
+function listBottomSponsors(defaultSponsor){
+
+    loadBottomSponsors(function(bottom_sponsors){
+        $bottom_sponsorList = $("#bottom_sponsors");
+        $bottom_sponsorList.html("<option value='default'>New Sponsor</option>");
+
+        bottom_sponsors.forEach(function(bottom_sponsor, id) {
+            let $option = $("<option value='" + id + "'>" + bottom_sponsor.bottom_sponsor_name + "</option>");
+            if(defaultSponsor && defaultSponsor == bottom_sponsor._id) $option.prop("selected","selected");
+            $("#bottom_sponsors").append($option);
+        }, this);
+
+        $('#bottom_sponsors').formSelect();
+    });
+}
+function loadBottomSponsors(callback){
+    $.get("/api/bottom_sponsors", function (data) {
+        bottom_sponsorsOverall = data.bottom_sponsors;
+        callback(bottom_sponsorsOverall);
+    });
+}
+
+function loadBottomSponsor(bottom_sponsor){
+    $("#bottom_sponsor_name").val(bottom_sponsor ? bottom_sponsor.bottom_sponsor_name : "");
+    $("#delete_bottom_sponsor").removeClass("disabled").addClass(!bottom_sponsor ? "disabled" : "");
+    $("#id").val(bottom_sponsor ? bottom_sponsor._id : "");
+    $("#bottom_sponsor_logo_img").attr("src", (bottom_sponsor && bottom_sponsor.logo ? "/bottom_sponsors/" + bottom_sponsor.logo : "")).hide();
+    if(bottom_sponsor && bottom_sponsor.logo) $("#bottom_sponsor_logo_img").show();
+}
+
+// ------------------------------------------------------
+
 function addPlayer(player){
     // console.log("passwicheuidh");
     $.ajax({
@@ -99,26 +188,6 @@ function addPlayer(player){
             listPlayers(res.id)
         }
     });
-}
-
-function addSponsor(sponsor){
-    $.ajax({
-        type: "POST",
-        url: "/api/sponsors",
-        data: sponsor,
-        cache: false,
-        contentType: false,
-        processData: false,
-        success: function (res) {
-            //listPlayers(res.id)
-        }
-    });
-}
-
-function loadSponsor(sponsor){
-    $("#sponsor_img").attr("src", "/sponsors/sponsor.png").show();
-    $("#sponsor_img_2").attr("src", "/sponsors/sponsor_2.png").show();
-    $("#sponsor_img_3").attr("src", "/sponsors/sponsor_3.png").show();
 }
 
 
