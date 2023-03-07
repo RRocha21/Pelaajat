@@ -54,6 +54,8 @@ var txt = ["../../files/img/hud_elements/logo_prodigies.png", "../../files/img/h
 var txt_sponsor = ["../../sponsors/sponsor.png", "../../sponsors/sponsor_2.png", "../../sponsors/sponsor_3.png"];
 var count = 1;
 
+var dead_utility = ["none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none"];
+
 var myTimer = setInterval(function() {
 }, 1);
 
@@ -253,16 +255,24 @@ function fillObserved(player) {
 
 
     if (statistics.helmet) {
-        $(".observed_container>.helmet").css("opacity", "1");
+        $(".observed_container>.flex_kd_observed>.helmet").css("display", "block");
     } else {
-        $(".observed_container>.helmet").css("opacity", "0");
+        $(".observed_container>.flex_kd_observed>.helmet").css("display", "none");
     }
 
     if (statistics.armor) {
-        $(".observed_container>.armor").css("opacity", "1");
+        $(".observed_container>.flex_kd_observed>.armor").css("display", "block");
+        if (statistics.helmet) {
+            $(".observed_container>.flex_kd_observed>.armor").css("margin-right", "");
+        } else {
+            $(".observed_container>.flex_kd_observed>.armor").css("margin-right", "20px");
+        }
     } else {
-        $(".observed_container>.armor").css("opacity", "0");
+        $(".observed_container>.flex_kd_observed>.armor").css("display", "none");
     }
+
+    $(".flex_kd_observed>.k").html(statistics.kills);
+    $(".flex_kd_observed>.d").html(statistics.deaths);
     
     // if (statistics.round_kills) {
     //     $playeractive.find(".Round_Kills").css("outline", "2px solid rgb(236,236,236 )").css("transition", "all 0.5s ease 0s");
@@ -290,7 +300,7 @@ function fillObserved(player) {
         $(".observed_container>.health_bar>.health_bar_bg>.health_bar_sm").css("background"," linear-gradient( 90deg, rgba(" + dark_ct_color + ",1) -30%, rgba(" + ct_color + ",1) 100%)");
         $(".observed_container>.health_bar>.health_bar_bg").css("width", statistics.health + "%");
 
-        $(".observed_container>.bomb_defuse").html(statistics.defusekit ? $("<img width='24px' />").attr("src", "/files/img/elements/defuse.png") : "");
+        $(".observed_container>.bomb_defuse").html(statistics.defusekit ? $("<img width='21px' />").attr("src", "/files/img/elements/defuse.png") : "");
 
     } else if (player.team == "CT" && teams.right.side == "ct") {
 
@@ -303,7 +313,7 @@ function fillObserved(player) {
         $(".observed_container>.health_bar>.health_bar_bg>.health_bar_sm").css("background", " linear-gradient( 90deg, rgba(" + dark_ct_color + ",1) -30%, rgba(" + ct_color + ",1) 100%)");
         $(".observed_container>.health_bar>.health_bar_bg").css("width", statistics.health + "%");
 
-        $(".observed_container>.bomb_defuse").html(statistics.defusekit ? $("<img width='24px' />").attr("src", "/files/img/elements/defuse.png") : "");
+        $(".observed_container>.bomb_defuse").html(statistics.defusekit ? $("<img width='21px' />").attr("src", "/files/img/elements/defuse.png") : "");
 
     } else if (player.team == "T" && teams.left.side == "t") {
 
@@ -316,7 +326,7 @@ function fillObserved(player) {
         $(".observed_container>.health_bar>.health_bar_bg>.health_bar_sm").css("background", " linear-gradient( 90deg, rgba(" + dark_t_color + ",1) -30%, rgba(" + t_color + ",1) 100%)");
         $(".observed_container>.health_bar>.health_bar_bg").css("width", statistics.health + "%");
 
-        $(".observed_container>.bomb_defuse").html(statistics.bomb ? $("<img width='24px' />").attr("src", "/files/img/elements/bomb.png") : "");
+        $(".observed_container>.bomb_defuse").html(statistics.bomb ? $("<img width='21px' />").attr("src", "/files/img/elements/bomb.png") : "");
 
     } else if (player.team == "T" && teams.right.side == "t") {
 
@@ -329,7 +339,7 @@ function fillObserved(player) {
         $(".observed_container>.health_bar>.health_bar_bg>.health_bar_sm").css("background", " linear-gradient( 90deg, rgba(" + dark_t_color + ",1) -30%, rgba(" + t_color + ",1) 100%)");
         $(".observed_container>.health_bar>.health_bar_bg").css("width", statistics.health + "%");
 
-        $(".observed_container>.bomb_defuse").html(statistics.bomb ? $("<img width='24px' />").attr("src", "/files/img/elements/bomb.png") : "");
+        $(".observed_container>.bomb_defuse").html(statistics.bomb ? $("<img width='21px' />").attr("src", "/files/img/elements/bomb.png") : "");
 
     }
 
@@ -363,7 +373,7 @@ function fillObserved(player) {
         } 
 
         if (weapon.type == "C4") {
-            $(".observed_container>.bomb_defuse").html(statistics.defusekit ? $("<img width='24px' />").attr("src", "/files/img/elements/bomb.png") : $("<img width='24px' />").attr("src", "/files/img/elements/bomb.png"));
+            $(".observed_container>.bomb_defuse").html(statistics.defusekit ? $("<img width='21px' />").attr("src", "/files/img/elements/bomb.png") : $("<img width='21px' />").attr("src", "/files/img/elements/bomb.png"));
         }
     }
 
@@ -768,8 +778,10 @@ function fillPlayer(player, nr, side, max) {
 
     if (statistics.round_kills > 0) {
         $player.find(".roundkills").css("display", "block");
+        $player.find(".round_icon").css("display", "block");
     } else {
         $player.find(".roundkills").css("display", "none");
+        $player.find(".round_icon").css("display", "none");
     }
 
 
@@ -817,8 +829,9 @@ function fillPlayer(player, nr, side, max) {
             $player.find(".separator").css("background", "rgb(" + ct_color + ")");
             // $player.find(".top_bar").css("border-bottom", "2px solid rgb("+ct_color+")");
             $player.find(".top_bar").css("background", "rgba("+darker_ct_color+", 0.6)");
-            $player.find(".roundkills").css("box-shadow", "0px 0px 5px 5px rgb(" + ct_color + ")");
-            $player.find(".roundkills").css("background", "rgb(" + ct_color + ")");
+            // $player.find(".roundkills").css("box-shadow", "0px 0px 5px 5px rgb(" + ct_color + ")");
+            $player.find(".round_icon").css("background-image" , "url(../../files/img/kills_ct.png)")
+            $player.find(".roundkills>.txt").css("color", "rgb(" + ct_color + ")");
     
         } else if (team == "t") {
             $top.find(".health_bar").css("background", " linear-gradient( 90deg, rgba(" + dark_t_color + ",1) 0%, rgba(" + dark_t_color + ",1) 20% ,rgba(" + t_color + ",1) 85% , rgba(" + t_color + ",1) 100%)");
@@ -826,8 +839,9 @@ function fillPlayer(player, nr, side, max) {
             $player.find(".separator").css("background", "rgb(" + t_color + ")");
             // $player.find(".top_bar").css("border-bottom", "2px solid rgb("+t_color+")");
             $player.find(".top_bar").css("background", "rgba("+darker_t_color+", 0.6)");
-            $player.find(".roundkills").css("box-shadow", "0px 0px 5px 5px rgb(" + t_color + ")");
-            $player.find(".roundkills").css("background", "rgb(" + t_color + ")");
+            // $player.find(".roundkills").css("box-shadow", "0px 0px 5px 5px rgb(" + t_color + ")");
+            $player.find(".round_icon").css("background-image" , "url(../../files/img/kills_t.png)")
+            $player.find(".roundkills>.txt").css("color", "rgb(" + t_color + ")");
         }
     } else if (player.observer_slot < 10) {
         if (team == "ct") {
@@ -836,8 +850,9 @@ function fillPlayer(player, nr, side, max) {
             $player.find(".separator").css("background", "rgb(" + ct_color + ")");
             // $player.find(".top_bar").css("border-bottom", "2px solid rgb("+ct_color+")");
             $player.find(".top_bar").css("background", "rgba("+darker_ct_color+", 0.6)");
-            $player.find(".roundkills").css("box-shadow", "0px 0px 5px 5px rgb(" + ct_color + ")");
-            $player.find(".roundkills").css("background", "rgb(" + ct_color + ")");
+            // $player.find(".roundkills").css("box-shadow", "0px 0px 5px 5px rgb(" + ct_color + ")");
+            $player.find(".round_icon").css("background-image" , "url(../../files/img/kills_ct.png)")
+            $player.find(".roundkills>.txt").css("color", "rgb(" + ct_color + ")");
     
         } else if (team == "t") {
             $top.find(".health_bar").css("background", " linear-gradient( -90deg, rgba(" + dark_t_color + ",1) 0%, rgba(" + dark_t_color + ",1) 20%, rgba(" + t_color + ",1) 85% , rgba(" + t_color + ",1) 100%)");
@@ -845,8 +860,9 @@ function fillPlayer(player, nr, side, max) {
             $player.find(".separator").css("background", "rgb(" + t_color + ")");
             // $player.find(".top_bar").css("border-bottom", "2px solid rgb("+t_color+")");
             $player.find(".top_bar").css("background", "rgba("+darker_t_color+", 0.6)");
-            $player.find(".roundkills").css("box-shadow", "0px 0px 5px 5px rgb(" + t_color + ")");
-            $player.find(".roundkills").css("background", "rgb(" + t_color + ")");
+            // $player.find(".roundkills").css("box-shadow", "0px 0px 5px 5px rgb(" + t_color + ")");
+            $player.find(".round_icon").css("background-image" , "url(../../files/img/kills_t.png)")
+            $player.find(".roundkills>.txt").css("color", "rgb(" + t_color + ")");
         } 
     } else if (player.observer_slot == 10) {
         if (team == "ct") {
@@ -855,8 +871,9 @@ function fillPlayer(player, nr, side, max) {
             $player.find(".separator").css("background", "rgb(" + ct_color + ")");
             // $player.find(".top_bar").css("border-bottom", "2px solid rgb("+ct_color+")");
             $player.find(".top_bar").css("background", "rgba("+darker_ct_color+", 0.6)");
-            $player.find(".roundkills").css("box-shadow", "0px 0px 5px 5px rgb(" + ct_color + ")");
-            $player.find(".roundkills").css("background", "rgb(" + ct_color + ")");
+            // $player.find(".roundkills").css("box-shadow", "0px 0px 5px 5px rgb(" + ct_color + ")");
+            $player.find(".round_icon").css("background-image" , "url(../../files/img/kills_ct.png)")
+            $player.find(".roundkills>.txt").css("color", "rgb(" + ct_color + ")");
     
         } else if (team == "t") {
             $top.find(".health_bar").css("background", " linear-gradient( -90deg, rgba(" + dark_t_color + ",1) -0%, rgba(" + dark_t_color + ",1) 20%, rgba(" + t_color + ",1) 85% , rgba(" + t_color + ",1) 100%)");
@@ -864,10 +881,12 @@ function fillPlayer(player, nr, side, max) {
             $player.find(".separator").css("background", "rgb(" + t_color + ")");
             // $player.find(".top_bar").css("border-bottom", "2px solid rgb("+t_color+")");
             $player.find(".top_bar").css("background", "rgba("+darker_t_color+", 0.6)");
-            $player.find(".roundkills").css("box-shadow", "0px 0px 5px 5px rgb(" + t_color + ")");
-            $player.find(".roundkills").css("background", "rgb(" + t_color + ")");
+            // $player.find(".roundkills").css("box-shadow", "0px 0px 5px 5px rgb(" + t_color + ")");
+            $player.find(".round_icon").css("background-image" , "url(../../files/img/kills_t.png)")
+            $player.find(".roundkills>.txt").css("color", "rgb(" + t_color + ")");
         } 
     }
+//aquiv1
 
     if (statistics.health == 0) {
         $player.find(".flex_lower_left").css("opacity", "0");
@@ -880,6 +899,9 @@ function fillPlayer(player, nr, side, max) {
         // $top.find("health_red").css("opacity", "0").css("transition", "all 0.5s ease 0s"); 
         $bottom.find(".grenades").css("opacity", "0");
         $top.find(".weapon_icon").css("opacity", "0");
+        $bottom.find(".dead_utility").css("opacity", "1");
+        $bottom.find(".dead_utility").css("animation", "deadUtility 140s ease-in-out forwards"); 
+
     } else {
         $player.find(".flex_lower_left").css("opacity", "1");
         $player.find(".flex_lower_right").css("opacity", "1");
@@ -891,7 +913,22 @@ function fillPlayer(player, nr, side, max) {
         $bottom.find(".weapon_icon").css("opacity", "1");
         $bottom.find(".grenades").css("opacity", "1");
         $top.find(".weapon_icon").css("opacity", "1");
-        
+        $bottom.find(".dead_utility").css("animation", ""); 
+        $bottom.find(".dead_utility").css("opacity", "0");
+        let utility_flag = false;
+        for (let key in weapons) {
+            let weapon = weapons[key];
+            if (weapon.type == "Grenade") {
+                if (key == "weapon_2" || (key == "weapon_3" && weapons.weapon_2.type != "Grenade")) {
+                    utility_flag = true;
+                    $bottom.find(".dead_utility").css("background-image", "url(../../files/img/grenades/" + weapon.name + ".png)");
+                } 
+            }
+        }
+
+        if (!utility_flag) {
+            $bottom.find(".dead_utility").css("background-image", "none");
+        }
     }
 
 

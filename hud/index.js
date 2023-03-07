@@ -289,7 +289,10 @@ io.on('connection', (socket) => {
 express.listen(config.ServerPort, address || 'localhost', () => {
     console.log()
     console.log("\tPEW PEW CUSTOM HUD v." + version + " ");
-    console.log("\thttp://pewpew.pt");
+    console.log("\t    http://pewpew.pt");
+    console.log()
+    console.log("\t  Made by: Renato Rocha")
+    console.log("\t      For: Pelaajat")
     console.log()
     console.log('\n\tPlease open the admin panel at the following IP:' );
     console.log('\thttp://' + address + ':' + config.ServerPort);
