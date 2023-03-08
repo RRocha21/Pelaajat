@@ -3070,7 +3070,7 @@ sub {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 3;
-    LINE-HEIGHT: 1.6;
+    LINE-HEIGHT: 1.7;
 }
 
 .header_container>.left_series>.bo1 {
@@ -3320,7 +3320,7 @@ sub {
 }
 
 .header_container>.round_container>.round_text {
-    font-size: 20px;
+    font-size: 19px;
     font-family: 'Panton';
     font-weight: 600;
     font-style: normal;
@@ -3333,7 +3333,7 @@ sub {
     text-align: center;
     z-index: 21;
     letter-spacing: 1;
-    line-height: 1.3;
+    line-height: 1.4;
 }
 
 .Pause_container {
@@ -3379,11 +3379,11 @@ sub {
 .Pause_container>.Pause_Left>.Pause_Text {
     position: absolute;
     font-size: 23px;
-    font-family: 'Cutmark';
+    font-family: 'Panton Narrow-Trial';
     font-weight: 300;
     font-style: normal;
     color: rgb(255, 255, 255);
-    line-height: 1.1;
+    line-height: 1.2;
     letter-spacing: 1.1;
     text-align: center;
     left: 0px;
@@ -3458,11 +3458,11 @@ sub {
 .Pause_container>.Pause_Right>.Pause_Text {
     position: absolute;
     font-size: 23px;
-    font-family: 'Cutmark';
+    font-family: 'Panton Narrow-Trial';
     font-weight: 300;
     font-style: normal;
     color: rgb(255, 255, 255);
-    line-height: 1.1;
+    line-height: 1.2;
     letter-spacing: 1.1;
     text-align: center;
     left: 0px;
@@ -3587,11 +3587,11 @@ sub {
 .Win_container>.win_container_left>.txt {
     position: absolute;
     font-size: 30px;
-    font-family: 'Cutmark';
+    font-family: 'Panton Narrow-Trial';
     font-weight: 300;
     font-style: normal;
     color: rgb(255, 255, 255);
-    line-height: 1;
+    line-height: 1.3;
     letter-spacing: 1.1;
     text-align: center;
     left: 0px;
@@ -3619,11 +3619,11 @@ sub {
 .Win_container>.win_container_right>.txt {
     position: absolute;
     font-size: 30px;
-    font-family: 'Cutmark';
+    font-family: 'Panton Narrow-Trial';
     font-weight: 300;
     font-style: normal;
     color: rgb(255, 255, 255);
-    line-height: 1;
+    line-height: 1.3;
     letter-spacing: 1.1;
     text-align: center;
     left: 0px;
@@ -3769,11 +3769,11 @@ sub {
 
 .Progress_Bar>.Center_Bar>.Center_Txt {
     font-size: 20px;
-    font-family: 'Cutmark';
+    font-family: 'Panton Narrow-Trial';
     font-weight: 300;
     font-style: normal;
     color: rgb(255, 255, 255);
-    line-height: 1.4;
+    line-height: 1.6;
     text-align: center;
     position: absolute;
     left: 0px;
@@ -3781,7 +3781,7 @@ sub {
     width: 100%;
     height: 100%;
     z-index: 325;
-    letter-spacing: 1.2;
+    letter-spacing: 1.3;
 }
 
 /* OBSERVED PLAYER */
@@ -7515,7 +7515,7 @@ sub {
     font-style: normal;
     color: rgb(255,255,255);
     letter-spacing: 1;
-    line-height: 3;
+    line-height: 3.3;
     text-align: center;
     position: absolute;
     left: 0px;
@@ -7624,7 +7624,7 @@ sub {
     font-style: normal;
     color: rgb(255,255,255);
     letter-spacing: 1;
-    line-height: 3;
+    line-height: 3.3;
     text-align: center;
     position: absolute;
     left: 0px;
@@ -7737,7 +7737,7 @@ sub {
     font-style: normal;
     color: rgb(255,255,255);
     letter-spacing: 1;
-    line-height: 3;
+    line-height: 3.3;
     text-align: center;
     position: absolute;
     left: 0px;
