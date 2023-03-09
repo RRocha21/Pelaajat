@@ -7528,11 +7528,11 @@ sub {
 
 .MapPick_BG>.Map1>.Map_Result {
     font-size: 22px;
-    font-family: 'Panton Narrow-Trial';
+    font-family: 'Cutmark Xlight';
     font-weight: 900;
     font-style: normal;
     color: rgb(255,255,255);
-    line-height: 3.2;
+    line-height: 2.9;
     letter-spacing: 1.4;
     text-align: center;
     position: absolute;
@@ -7637,11 +7637,11 @@ sub {
 
 .MapPick_BG>.Map2>.Map_Result {
     font-size: 22px;
-    font-family: 'Panton Narrow-Trial';
+    font-family: 'Cutmark Xlight';
     font-weight: 900;
     font-style: normal;
     color: rgb(255,255,255);
-    line-height: 3.2;
+    line-height: 2.9;
     letter-spacing: 1.4;
     text-align: center;
     position: absolute;
@@ -7750,11 +7750,11 @@ sub {
 
 .MapPick_BG>.Map3>.Map_Result {
     font-size: 22px;
-    font-family: 'Panton Narrow-Trial';
+    font-family: 'Cutmark Xlight';
     font-weight: 900;
     font-style: normal;
     color: rgb(255,255,255);
-    line-height: 3.2;
+    line-height: 2.9;
     letter-spacing: 1.4;
     text-align: center;
     position: absolute;
