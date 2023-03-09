@@ -3147,7 +3147,7 @@ sub {
 
 .header_container>.time {
     font-size: 38px;
-    font-family: 'Panton Narrow-Trial';
+    font-family: 'Goodland';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
@@ -3224,14 +3224,14 @@ sub {
 
 .header_container>.left_score {
     font-size: 50px;
-    font-family: 'Panton Narrow-Trial';
+    font-family: 'Cutmark Xlight';
     font-weight: 900;
     font-style: normal;
     letter-spacing: 2;
     /* background: rgb(0,0,255); */
     color: rgb(255,255,255);
     text-transform: uppercase;
-    line-height: 1.6;
+    line-height: 1.5;
     position: absolute;
     left: 363px;
     top: 0px;
@@ -3244,13 +3244,13 @@ sub {
 
 .header_container>.right_score {
     font-size: 50px;
-    font-family: 'Panton Narrow-Trial';
+    font-family: 'Cutmark Xlight';
     font-weight: 900;
     font-style: normal;
     letter-spacing: 2;
     /* background: rgb(0,0,255); */
     color: rgb(255,255,255);
-    line-height: 1.6;
+    line-height: 1.5;
     position: absolute;
     right: 363px;
     top: 0px;
@@ -3881,7 +3881,7 @@ sub {
   
   .flex_kd_observed>.k {
     font-size: 21px;
-    font-family: 'Panton Narrow-Trial';
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
@@ -3890,13 +3890,13 @@ sub {
     letter-spacing: 2;
     line-height: 1;
     text-align: center;
-    margin-bottom: -2px;
+    margin-bottom: 0px;
     margin-left: 7px;
   }
   
   .flex_kd_observed>.d {
     font-size: 21px;
-    font-family: 'Panton Narrow-Trial';
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
@@ -3905,7 +3905,7 @@ sub {
     letter-spacing: 2;
     line-height: 1;
     text-align: center;
-    margin-bottom: -2px;
+    margin-bottom: 0px;
     margin-left: 7px;
   }
 
@@ -4089,7 +4089,7 @@ sub {
 
 .observed_container>.health_bar>.health {
     font-size: 20px;
-    font-family: 'Panton Narrow-Trial';
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
@@ -4103,7 +4103,7 @@ sub {
     /* text-overflow: clip; */
     text-align: center;
     z-index: 63;
-    line-height: 1.4;
+    line-height: 1.3;
 }
 
 .observed_container>.ammo_bar {
@@ -4141,7 +4141,7 @@ sub {
 
 .observed_container>.ammo_bar>.ammo_txt {
     font-size: 19px;
-    font-family: 'Panton';
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
@@ -4155,7 +4155,7 @@ sub {
     /* text-overflow: clip; */
     text-align: left;
     z-index: 211;
-    line-height: 1.3;
+    line-height: 1.1;
 }
 
 /** HIDE/SHOW OBSERVED BAR **/
@@ -4593,7 +4593,7 @@ sub {
 }
 
 .flex_name_round>.round_icon {
-    margin-left: 10px;
+    margin-left: 5px;
     margin-bottom:7px;
     height: 17px;
     width: 17px;
@@ -4618,8 +4618,8 @@ sub {
 }
 
 .flex_name_round>.roundkills>.txt {
-    font-size: 18px;
-    font-family: 'Panton Narrow-Trial';
+    font-size: 17px;
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(0, 0, 0);
@@ -4720,7 +4720,7 @@ sub {
     margin-left: 3px;
     margin-top: 1px;
     font-size: 15px;
-    font-family: 'Panton Narrow-Trial';
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
@@ -4883,7 +4883,7 @@ sub {
 }
 
 .flex_name_round_right>.round_icon {
-    margin-right: 10px;
+    margin-right: 5px;
     margin-bottom:7px;
     height: 17px;
     width: 17px;
@@ -4907,8 +4907,8 @@ sub {
 }
 
 .flex_name_round_right>.roundkills>.txt {
-    font-size: 18px;
-    font-family: 'Panton Narrow-Trial';
+    font-size: 17px;
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(0, 0, 0);
@@ -5325,7 +5325,7 @@ sub {
     margin-right: 3px;
     margin-top: 1px;
     font-size: 15px;
-    font-family: 'Panton Narrow-Trial';
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
@@ -5454,12 +5454,12 @@ sub {
 
   .flex_money_bomb>.money>.moneys {
     font-size: 14px;
-    font-family: 'Panton';
-    font-weight: 600;
+    font-family: 'Cutmark Xlight';
+    font-weight: 900;
     font-style: normal;
     color:rgba(207, 255, 62);
     text-transform: uppercase;
-    line-height: 1.3;
+    line-height: 1.1;
     letter-spacing: 1.2;
     text-align: center;
     position: absolute;
@@ -5537,12 +5537,12 @@ sub {
 
   .flex_money_bomb_right>.money>.moneys {
     font-size: 14px;
-    font-family: 'Panton';
-    font-weight: 600;
+    font-family: 'Cutmark Xlight';
+    font-weight: 900;
     font-style: normal;
     color:rgba(207, 255, 62);
     text-transform: uppercase;
-    line-height: 1.3;
+    line-height: 1.1;
     letter-spacing: 1.2;
     text-align: center;
     position: absolute;
@@ -5633,7 +5633,7 @@ sub {
   
   .flex_kd>.k {
     font-size: 16px;
-    font-family: 'Panton Narrow-Trial';
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
@@ -5642,13 +5642,13 @@ sub {
     letter-spacing: 2;
     line-height: 1;
     text-align: center;
-    margin-bottom: -3px;
+    margin-bottom: -1px;
     margin-left: 5px;
   }
   
   .flex_kd>.d {
     font-size: 16px;
-    font-family: 'Panton Narrow-Trial';
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
@@ -5657,7 +5657,7 @@ sub {
     letter-spacing: 2;
     line-height: 1;
     text-align: center;
-    margin-bottom: -3px;
+    margin-bottom: -1px;
     margin-left: 5px;
   }
 
@@ -5700,7 +5700,7 @@ sub {
   
   .flex_kd_right>.k {
     font-size: 16px;
-    font-family: 'Panton Narrow-Trial';
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
@@ -5709,13 +5709,13 @@ sub {
     letter-spacing: 2;
     line-height: 1;
     text-align: center;
-    margin-bottom: -3px;
+    margin-bottom: -1px;
     margin-right: 5px;
   }
   
   .flex_kd_right>.d {
     font-size: 16px;
-    font-family: 'Panton Narrow-Trial';
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
@@ -5724,7 +5724,7 @@ sub {
     letter-spacing: 2;
     line-height: 1;
     text-align: center;
-    margin-bottom: -3px;
+    margin-bottom: -1px;
     margin-right: 5px;
   }
 
@@ -5814,7 +5814,7 @@ sub {
     z-index: 208;
     /* opacity: 0.3; */
     font-size: 17px;
-    font-family: 'Panton';
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
@@ -5883,7 +5883,7 @@ sub {
     z-index: 208;
     /* opacity: 0.3; */
     font-size: 17px;
-    font-family: 'Panton';
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
@@ -5953,7 +5953,7 @@ sub {
     z-index: 208;
     /* opacity: 0.3; */
     font-size: 17px;
-    font-family: 'Panton';
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
@@ -6108,7 +6108,7 @@ sub {
     z-index: 208;
     /* opacity: 0.3; */
     font-size: 17px;
-    font-family: 'Panton';
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
@@ -6178,7 +6178,7 @@ sub {
     z-index: 208;
     /* opacity: 0.3; */
     font-size: 17px;
-    font-family: 'Panton';
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
@@ -6248,7 +6248,7 @@ sub {
     z-index: 208;
     /* opacity: 0.3; */
     font-size: 17px;
-    font-family: 'Panton';
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
@@ -6744,12 +6744,12 @@ sub {
 }
 
 .Spam_A>.Spam_BG>.Bottom_Spam>.HE>.HE_Txt {
-    font-size: 26px;
-    font-family: 'Panton Narrow-Trial';
+    font-size: 25px;
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
-    line-height: 2.7;
+    line-height: 2.6;
     text-align: left;
     letter-spacing: 6;
     position: absolute;
@@ -6785,12 +6785,12 @@ sub {
 }
 
 .Spam_A>.Spam_BG>.Bottom_Spam>.Flash>.Flash_Txt {
-    font-size: 26px;
-    font-family: 'Panton Narrow-Trial';
+    font-size: 25px;
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
-    line-height: 2.7;
+    line-height: 2.6;
     text-align: left;
     position: absolute;
     letter-spacing: 6;
@@ -6826,12 +6826,12 @@ sub {
 }
 
 .Spam_A>.Spam_BG>.Bottom_Spam>.Smoke>.Smoke_Txt {
-    font-size: 26px;
-    font-family: 'Panton Narrow-Trial';
+    font-size: 25px;
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
-    line-height: 2.7;
+    line-height: 2.6;
     text-align: left;
     letter-spacing: 6;
     position: absolute;
@@ -6867,12 +6867,12 @@ sub {
 }
 
 .Spam_A>.Spam_BG>.Bottom_Spam>.Inc>.Inc_Txt {
-    font-size: 26px;
-    font-family: 'Panton Narrow-Trial';
+    font-size: 25px;
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
-    line-height: 2.7;
+    line-height: 2.6;
     text-align: left;
     letter-spacing: 6;
     position: absolute;
@@ -7029,12 +7029,12 @@ sub {
 }
 
 .Spam_B>.Spam_BG>.Bottom_Spam>.HE>.HE_Txt {
-    font-size: 26px;
-    font-family: 'Panton Narrow-Trial';
+    font-size: 25px;
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
-    line-height: 2.7;
+    line-height: 2.6;
     text-align: left;
     letter-spacing: 6;
     position: absolute;
@@ -7070,12 +7070,12 @@ sub {
 }
 
 .Spam_B>.Spam_BG>.Bottom_Spam>.Flash>.Flash_Txt {
-    font-size: 26px;
-    font-family: 'Panton Narrow-Trial';
+    font-size: 25px;
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
-    line-height: 2.7;
+    line-height: 2.6;
     text-align: left;
     letter-spacing: 6;
     position: absolute;
@@ -7111,12 +7111,12 @@ sub {
 }
 
 .Spam_B>.Spam_BG>.Bottom_Spam>.Smoke>.Smoke_Txt {
-    font-size: 26px;
-    font-family: 'Panton Narrow-Trial';
+    font-size: 25px;
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
-    line-height: 2.7;
+    line-height: 2.6;
     text-align: left;
     letter-spacing: 6;
     position: absolute;
@@ -7152,12 +7152,12 @@ sub {
 }
 
 .Spam_B>.Spam_BG>.Bottom_Spam>.Inc>.Inc_Txt {
-    font-size: 26px;
-    font-family: 'Panton Narrow-Trial';
+    font-size: 25px;
+    font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
     color: rgb(255,255,255);
-    line-height: 2.7;
+    line-height: 2.6;
     text-align: left;
     letter-spacing: 6;
     position: absolute;
