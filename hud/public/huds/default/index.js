@@ -1513,6 +1513,7 @@ function updatePage(data) {
         $(".header_container>.right_series>.bo1").css("opacity", "1");
         $(".header_container>.right_series>.bo3_map1").css("opacity", "0");
         $(".header_container>.right_series>.bo3_map2").css("opacity", "0");
+        $(".best_container").html("Best of 1");
         var map3_let = data.map();
         var map3 = map3_let.name.slice(3);
         current_map = 1; 
@@ -1528,6 +1529,7 @@ function updatePage(data) {
             $(".header_container>.right_series>.bo1").css("border-color", "rgba(" + dark_t_color + ", 1)");
         }
 
+
     } else if (matchup && matchup.toLowerCase() == "bo3") {
         bo = 3;
         $(".header_container>.left_series>.bo1").css("opacity", "0");
@@ -1536,6 +1538,7 @@ function updatePage(data) {
         $(".header_container>.left_series>.bo3_map2").css("opacity", "1");
         $(".header_container>.right_series>.bo3_map1").css("opacity", "1");
         $(".header_container>.right_series>.bo3_map2").css("opacity", "1");
+        $(".best_container").html("Best of 3");
 
         if (match.team_1.map_score == 1) {
             if (teams.left.side == "ct") {
