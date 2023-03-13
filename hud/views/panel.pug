@@ -70,7 +70,7 @@
 								option(value='mirage') Mirage
 								option(value='ancient') Ancient
 								option(value='anubis') Anubis
-							label Map Pick for Team 1
+							label First Map Pick
 						.h3 RESULT
 						.input-field.col.s12.m6 
 							select#map_1_left_result
@@ -144,6 +144,12 @@
 								option(value = '30') 30
 								option(value = '31') 31  
 							label Team 2 Result
+						.h3 Map 1 Picked by
+						.input-field.col.s12
+							select#swapsides
+								option(value = '0', select) Team 1
+								option(value = '1') Team 2
+							label Who picked Map 1?
 						
 				.col.s12.m4 
 					.row 
@@ -160,7 +166,7 @@
 								option(value='mirage') Mirage
 								option(value='ancient') Ancient
 								option(value='anubis') Anubis
-							label Map Pick for Team 2
+							label Second Map Pick
 						.h3 RESULT
 						.input-field.col.s12.m6 
 							select#map_2_left_result
@@ -234,19 +240,14 @@
 								option(value = '30') 30
 								option(value = '31') 31  								
 							label Team 2 Result
-						.h3 Current Map and Map Side Pick
-						.input-field.col.s12.m6 
+						.h3 Current Map
+						.input-field.col.s12
 							select#map_playing
 								option(value = '0', select) 0
 								option(value = '1') 1 
 								option(value = '2') 2 
 								option(value = '3') 3 
 							label Current Map being played
-						.input-field.col.s12.m6 
-							select#swapsides
-								option(value = '0', select) 0
-								option(value = '1') 1 
-							label Swap Map sides
 				.col.s12.m4 
 					.row 
 						h5 DECIDER
@@ -262,7 +263,7 @@
 								option(value='mirage') Mirage
 								option(value='ancient') Ancient
 								option(value='anubis') Anubis
-							label Decider Map
+							label Decider Map Pick
 						.h3 RESULT
 						.input-field.col.s12.m6 
 							select#map_3_left_result

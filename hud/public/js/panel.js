@@ -114,7 +114,6 @@ $(document).ready(() => {
                 map2: $("#map_pick_2").val(),
                 map3: $("#map_pick_3").val(),
                 map_current: $("#map_playing").val(),
-                sides_swap: $("#swapsides").val()
             },
             map_1_res: {
                 map_right_res: $("#map_1_left_result").val(),
@@ -135,6 +134,11 @@ $(document).ready(() => {
                 letters: $("#letters").val()
             }
         };
+        if($("#swapsides").val() == "1") { 
+            match.map_pick.sides_swap = "0";
+        } else if($("#swapsides").val() == "0") {
+            match.map_pick.sides_swap = "1";
+        }
         if($("#team_1_score").val() == "0") { 
             if($("#team_2_score").val() == "2"){
                 match.team_2.map_score = "2";

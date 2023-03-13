@@ -2001,7 +2001,7 @@ function updatePage(data) {
         $(".Game_History>.History_Bar>.Overtime_Divider").css("opacity", "0");
     } else if (total_rounds < 36) {
         $(".round_text").html("Round  " + round_now + "/36");
-        $(".Game_History>.History_Text>.Text").html("Game History - 1<sup>ST</sup> OVERTIME");
+        $(".Game_History>.History_Text>.Text").html("Game History - 1<sup>ST</sup> Overtime");
         $(".Game_History>.History_Bar>.Overtime_Divider").css("opacity", "1");
     } else if (total_rounds < 42) {
         $(".round_text").html("Round  " + round_now + "/42");
