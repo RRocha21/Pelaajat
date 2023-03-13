@@ -240,14 +240,12 @@
 								option(value = '30') 30
 								option(value = '31') 31  								
 							label Team 2 Result
-						.h3 Current Map
 						.input-field.col.s12
-							select#map_playing
-								option(value = '0', select) 0
-								option(value = '1') 1 
-								option(value = '2') 2 
-								option(value = '3') 3 
-							label Current Map being played
+							.row
+								a.waves-effect.waves-light.btn#set Set
+								a.waves-effect.waves-light.btn#swap Swap
+							.row
+								a.waves-effect.waves-light.btn#ref Force refresh HUD
 				.col.s12.m4 
 					.row 
 						h5 DECIDER
@@ -337,9 +335,11 @@
 								option(value = '30') 30
 								option(value = '31') 31  								
 							label Team 2 Result
-		.input-field.col.s12
-			.row
-				a.waves-effect.waves-light.btn#set Set
-				a.waves-effect.waves-light.btn#swap Swap
-			.row
-				a.waves-effect.waves-light.btn#ref Force refresh HUD
+						.h3 Current Map
+						.input-field.col.s12
+							select#map_playing
+								option(value = '0', select) 0
+								option(value = '1') 1 
+								option(value = '2') 2 
+								option(value = '3') 3 
+							label Current Map being played
