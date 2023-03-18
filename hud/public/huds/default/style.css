@@ -4580,30 +4580,29 @@ sub {
 
 
 .flex_name_round>.player_name{
-    font-size: 18px;
+    font-size: 17px;
     font-family: 'Panton Narrow-Trial';
     font-weight: 300;
     font-style: normal;
     color: rgb(255,255,255);
     line-height: 1.2;
-    letter-spacing: 1.6;
+    letter-spacing: 1;
     text-align: left;
     height: 26px;
     overflow: hidden;
 }
 
 .flex_name_round>.round_icon {
-    margin-left: 7px;
-    margin-bottom:7px;
-    height: 17px;
-    width: 17px;
+    margin-left: 5px;
+    margin-bottom: 9px;
+    height: 16px;
+    width: 16px;
     /* background: #fff;
     border-radius: 50%; */
     background-image: url("../../files/img/kills_ct.png");
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-
     /* overflow: hidden; */
 }
 
@@ -4618,7 +4617,7 @@ sub {
 }
 
 .flex_name_round>.roundkills>.txt {
-    font-size: 17px;
+    font-size: 16px;
     font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;
@@ -4870,23 +4869,23 @@ sub {
 
 
 .flex_name_round_right>.player_name{
-    font-size: 18px;
+    font-size: 17px;
     font-family: 'Panton Narrow-Trial';
     font-weight: 300;
     font-style: normal;
     color: rgb(255,255,255);
     line-height: 1.2;
-    letter-spacing: 1.6;
+    letter-spacing: 1;
     text-align: right;
     height: 26px;
     overflow: hidden;
 }
 
 .flex_name_round_right>.round_icon {
-    margin-right: 7px;
-    margin-bottom:7px;
-    height: 17px;
-    width: 17px;
+    margin-right: 5px;
+    margin-bottom: 9px;
+    height: 16px;
+    width: 16px;
     /* background: #fff;
     border-radius: 50%; */
     background-image: url("../../files/img/kills_ct.png");
@@ -4894,7 +4893,6 @@ sub {
     background-position: center;
     background-repeat: no-repeat;
     transform: all 0.5s ease 0.0s;
-
     /* overflow: hidden; */
 }
 
@@ -4907,7 +4905,7 @@ sub {
 }
 
 .flex_name_round_right>.roundkills>.txt {
-    font-size: 17px;
+    font-size: 16px;
     font-family: 'Cutmark Xlight';
     font-weight: 600;
     font-style: normal;

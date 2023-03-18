@@ -343,7 +343,7 @@ function fillObserved(player) {
 
     }
 
-    if (obs_player_name.length > 10) obs_player_name = obs_player_name.substring(0, 10);
+    if (obs_player_name.length > 13) obs_player_name = obs_player_name.substring(0, 13);
     $(".observed_container>.name").html(obs_player_name);
 
     $("#nades").html("");
@@ -901,6 +901,12 @@ function fillPlayer(player, nr, side, max) {
         $top.find(".weapon_icon").css("opacity", "0");
         $bottom.find(".dead_utility").css("opacity", "1");
         $bottom.find(".dead_utility").css("animation", "deadUtility 140s ease-in-out forwards"); 
+        $player.find(".flex_name_round>.player_name").css("font-size", "15px");
+        $player.find(".flex_name_round>.player_name").css("line-height", "1.4");
+        $player.find(".flex_name_round>.player_name").css("letter-spacing", "0.5");
+        $player.find(".flex_name_round_right>.player_name").css("font-size", "15px");
+        $player.find(".flex_name_round_right>.player_name").css("line-height", "1.4");
+        $player.find(".flex_name_round_right>.player_name").css("letter-spacing", "0.5");
 
     } else {
         $player.find(".flex_lower_left").css("opacity", "1");
@@ -915,6 +921,12 @@ function fillPlayer(player, nr, side, max) {
         $top.find(".weapon_icon").css("opacity", "1");
         $bottom.find(".dead_utility").css("animation", ""); 
         $bottom.find(".dead_utility").css("opacity", "0");
+        $player.find(".flex_name_round>.player_name").css("font-size", "17px");
+        $player.find(".flex_name_round>.player_name").css("line-height", "1.2");
+        $player.find(".flex_name_round>.player_name").css("letter-spacing", "1");
+        $player.find(".flex_name_round_right>.player_name").css("font-size", "17px");
+        $player.find(".flex_name_round_right>.player_name").css("line-height", "1.2");
+        $player.find(".flex_name_round_right>.player_name").css("letter-spacing", "1");
         let utility_flag = false;
         for (let key in weapons) {
             let weapon = weapons[key];
@@ -940,7 +952,7 @@ function fillPlayer(player, nr, side, max) {
         if (left_name_team.toUpperCase() !== "THE PRODIGIES -") {
             player_name = player_name.slice(letters);
         } 
-        if (player_name.length > 10) player_name = player_name.substring(0, 10);
+        if (player_name.length > 13) player_name = player_name.substring(0, 13);
         $player.find(".player_name").html(player_name.split(" ").join(""));
 
         $player.find(".number").html(player.observer_slot);
@@ -981,7 +993,7 @@ function fillPlayer(player, nr, side, max) {
         if (right_name_team.toUpperCase() !== "THE PRODIGIES -") {
             player_name = player_name.slice(letters);
         } 
-        if (player_name.length > 10) player_name = player_name.substring(0, 10);
+        if (player_name.length > 13) player_name = player_name.substring(0, 13);
         $player.find(".player_name").html(player_name.split(" ").join(""));
 
         $player.find(".number").html(player.observer_slot);
@@ -1022,7 +1034,7 @@ function fillPlayer(player, nr, side, max) {
         if (right_name_team.toUpperCase() !== "THE PRODIGIES -") {
             player_name = player_name.slice(letters);
         } 
-        if (player_name.length > 10) player_name = player_name.substring(0, 10);
+        if (player_name.length > 13) player_name = player_name.substring(0, 13);
         $player.find(".player_name").html(player_name.split(" ").join(""));
 
         $player.find(".number").html("0");
